@@ -1,0 +1,5588 @@
+{
+  "nodes": [
+    {
+      "id": "2to3",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "2to3",
+        "version": "1.0",
+        "summary": "Adds the 2to3 command directly to entry_points."
+      }
+    },
+    {
+      "id": "abarms",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "abarms",
+        "version": "1.1.3",
+        "summary": "abarms is now hoardy-adb"
+      }
+    },
+    {
+      "id": "absl_py",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "absl-py",
+        "version": "2.4.0",
+        "summary": "Abseil Python Common Libraries, see https://github.com/abseil/abseil-py."
+      }
+    },
+    {
+      "id": "accessible_output2",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "accessible-output2",
+        "version": "0.17",
+        "summary": "Library to provide speech and braille output to a variety of different screen readers and other accessibility solutions."
+      }
+    },
+    {
+      "id": "aiohappyeyeballs",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "aiohappyeyeballs",
+        "version": "2.6.1",
+        "summary": "Happy Eyeballs for asyncio"
+      }
+    },
+    {
+      "id": "aiohttp",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "aiohttp",
+        "version": "3.11.16",
+        "summary": "Async http client/server framework (asyncio)"
+      }
+    },
+    {
+      "id": "aioredis",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "aioredis",
+        "version": "2.0.1",
+        "summary": "asyncio (PEP 3156) Redis support"
+      }
+    },
+    {
+      "id": "aiosignal",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "aiosignal",
+        "version": "1.3.2",
+        "summary": "aiosignal: a list of registered asynchronous callbacks"
+      }
+    },
+    {
+      "id": "altgraph",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "altgraph",
+        "version": "0.17.4",
+        "summary": "Python graph (network) package"
+      }
+    },
+    {
+      "id": "annotated_types",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "annotated-types",
+        "version": "0.7.0",
+        "summary": "Reusable constraint types to use with typing.Annotated"
+      }
+    },
+    {
+      "id": "anthropic",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "anthropic",
+        "version": "0.46.0",
+        "summary": "The official Python library for the anthropic API"
+      }
+    },
+    {
+      "id": "anyio",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "anyio",
+        "version": "4.9.0",
+        "summary": "High level compatibility layer for multiple asynchronous event loop implementations"
+      }
+    },
+    {
+      "id": "archspec",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "archspec",
+        "version": "0.2.5",
+        "summary": "A library to query system architecture"
+      }
+    },
+    {
+      "id": "argon2_cffi",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "argon2-cffi",
+        "version": "23.1.0",
+        "summary": "Argon2 for Python"
+      }
+    },
+    {
+      "id": "argon2_cffi_bindings",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "argon2-cffi-bindings",
+        "version": "21.2.0",
+        "summary": "Low-level CFFI bindings for Argon2"
+      }
+    },
+    {
+      "id": "arrow",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "arrow",
+        "version": "1.3.0",
+        "summary": "Better dates & times for Python"
+      }
+    },
+    {
+      "id": "astc_encoder_py",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "astc-encoder-py",
+        "version": "0.1.11",
+        "summary": "a python wrapper for astc-encoder"
+      }
+    },
+    {
+      "id": "asttokens",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "asttokens",
+        "version": "3.0.0",
+        "summary": "Annotate AST trees with source code positions"
+      }
+    },
+    {
+      "id": "astunparse",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "astunparse",
+        "version": "1.6.3",
+        "summary": "An AST unparser for Python"
+      }
+    },
+    {
+      "id": "async_generator",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "async-generator",
+        "version": "1.10",
+        "summary": "Async generators and context managers for Python 3.5+"
+      }
+    },
+    {
+      "id": "async_lru",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "async-lru",
+        "version": "2.0.5",
+        "summary": "Simple LRU cache for asyncio"
+      }
+    },
+    {
+      "id": "async_timeout",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "async-timeout",
+        "version": "5.0.1",
+        "summary": "Timeout context manager for asyncio programs"
+      }
+    },
+    {
+      "id": "attrs",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "attrs",
+        "version": "25.3.0",
+        "summary": "Classes Without Boilerplate"
+      }
+    },
+    {
+      "id": "babel",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "babel",
+        "version": "2.17.0",
+        "summary": "Internationalization utilities"
+      }
+    },
+    {
+      "id": "backcall",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "backcall",
+        "version": "0.2.0",
+        "summary": "Specifications for callback functions passed in to an API"
+      }
+    },
+    {
+      "id": "bcrypt",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "bcrypt",
+        "version": "4.3.0",
+        "summary": "Modern password hashing for your software and your servers"
+      }
+    },
+    {
+      "id": "beautifulsoup4",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "beautifulsoup4",
+        "version": "4.13.5",
+        "summary": "Screen-scraping library"
+      }
+    },
+    {
+      "id": "bleach",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "bleach",
+        "version": "6.2.0",
+        "summary": "An easy safelist-based HTML-sanitizing tool."
+      }
+    },
+    {
+      "id": "bottle",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "bottle",
+        "version": "0.13.2",
+        "summary": "Fast and simple WSGI-framework for small web-applications."
+      }
+    },
+    {
+      "id": "bottle_websocket",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "bottle-websocket",
+        "version": "0.2.9",
+        "summary": "WebSockets for bottle"
+      }
+    },
+    {
+      "id": "brotli",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "Brotli",
+        "version": "1.1.0",
+        "summary": "Python bindings for the Brotli compression library"
+      }
+    },
+    {
+      "id": "bson",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "bson",
+        "version": "0.5.10",
+        "summary": "BSON codec for Python"
+      }
+    },
+    {
+      "id": "cabarchive",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "cabarchive",
+        "version": "0.2.4",
+        "summary": "A pure-python library for creating and extracting cab files"
+      }
+    },
+    {
+      "id": "certifi",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "certifi",
+        "version": "2025.8.3",
+        "summary": "Python package for providing Mozilla's CA Bundle."
+      }
+    },
+    {
+      "id": "cffi",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "cffi",
+        "version": "2.0.0",
+        "summary": "Foreign Function Interface for Python calling C code."
+      }
+    },
+    {
+      "id": "cfgv",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "cfgv",
+        "version": "3.5.0",
+        "summary": "Validate configuration and produce human readable error messages."
+      }
+    },
+    {
+      "id": "chameleon",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "Chameleon",
+        "version": "4.6.0",
+        "summary": "Fast HTML/XML Template Compiler."
+      }
+    },
+    {
+      "id": "chardet",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "chardet",
+        "version": "5.2.0",
+        "summary": "Universal encoding detector for Python 3"
+      }
+    },
+    {
+      "id": "charset_normalizer",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "charset-normalizer",
+        "version": "3.4.3",
+        "summary": "The Real First Universal Charset Detector. Open, modern and actively maintained alternative to Chardet."
+      }
+    },
+    {
+      "id": "click",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "click",
+        "version": "8.3.3",
+        "summary": "Composable command line interface toolkit"
+      }
+    },
+    {
+      "id": "cloudpickle",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "cloudpickle",
+        "version": "3.1.1",
+        "summary": "Pickler class to extend the standard pickle.Pickler functionality"
+      }
+    },
+    {
+      "id": "clr_loader",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "clr_loader",
+        "version": "0.2.7.post0",
+        "summary": "Generic pure Python loader for .NET runtimes"
+      }
+    },
+    {
+      "id": "colorama",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "colorama",
+        "version": "0.4.6",
+        "summary": "Cross-platform colored terminal text."
+      }
+    },
+    {
+      "id": "comm",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "comm",
+        "version": "0.2.2",
+        "summary": "Jupyter Python Comm implementation, for usage in ipykernel, xeus-python etc."
+      }
+    },
+    {
+      "id": "comtypes",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "comtypes",
+        "version": "1.4.10",
+        "summary": "Pure Python COM package"
+      }
+    },
+    {
+      "id": "configparser",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "configparser",
+        "version": "7.2.0",
+        "summary": "Updated configparser from stdlib for earlier Pythons."
+      }
+    },
+    {
+      "id": "contourpy",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "contourpy",
+        "version": "1.3.3",
+        "summary": "Python library for calculating contours of 2D quadrilateral grids"
+      }
+    },
+    {
+      "id": "cryptography",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "cryptography",
+        "version": "44.0.2",
+        "summary": "cryptography is a package which provides cryptographic recipes and primitives to Python developers."
+      }
+    },
+    {
+      "id": "cx_freeze",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "cx_Freeze",
+        "version": "8.3.0",
+        "summary": "Create standalone executables from Python scripts"
+      }
+    },
+    {
+      "id": "cx_logging",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "cx_Logging",
+        "version": "3.2.1",
+        "summary": "Python and C interfaces for logging"
+      }
+    },
+    {
+      "id": "cycler",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "cycler",
+        "version": "0.12.1",
+        "summary": "Composable style cycles"
+      }
+    },
+    {
+      "id": "cython",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "Cython",
+        "version": "3.0.12",
+        "summary": "The Cython compiler for writing C extensions in the Python language."
+      }
+    },
+    {
+      "id": "cytolk",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "cytolk",
+        "version": "0.1.13",
+        "summary": "A cython wrapper over the tolk library"
+      }
+    },
+    {
+      "id": "debugpy",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "debugpy",
+        "version": "1.8.14",
+        "summary": "An implementation of the Debug Adapter Protocol for Python"
+      }
+    },
+    {
+      "id": "decorator",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "decorator",
+        "version": "5.2.1",
+        "summary": "Decorators for Humans"
+      }
+    },
+    {
+      "id": "defusedxml",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "defusedxml",
+        "version": "0.7.1",
+        "summary": "XML bomb protection for Python stdlib modules"
+      }
+    },
+    {
+      "id": "discord_py",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "discord.py",
+        "version": "2.5.2",
+        "summary": "A Python wrapper for the Discord API"
+      }
+    },
+    {
+      "id": "distlib",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "distlib",
+        "version": "0.3.9",
+        "summary": "Distribution utilities"
+      }
+    },
+    {
+      "id": "distro",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "distro",
+        "version": "1.9.0",
+        "summary": "Distro - an OS platform information API"
+      }
+    },
+    {
+      "id": "docutils",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "docutils",
+        "version": "0.21.2",
+        "summary": "Docutils -- Python Documentation Utilities"
+      }
+    },
+    {
+      "id": "easyprocess",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "EasyProcess",
+        "version": "1.1",
+        "summary": "Easy to use Python subprocess interface."
+      }
+    },
+    {
+      "id": "eel",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "Eel",
+        "version": "0.18.1",
+        "summary": "For little HTML GUI applications, with easy Python/JS interop"
+      }
+    },
+    {
+      "id": "einops",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "einops",
+        "version": "0.8.2",
+        "summary": "A new flavour of deep learning operations"
+      }
+    },
+    {
+      "id": "entrypoint2",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "entrypoint2",
+        "version": "1.1",
+        "summary": "easy to use command-line interface for python modules"
+      }
+    },
+    {
+      "id": "entrypoints",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "entrypoints",
+        "version": "0.4",
+        "summary": "Discover and load entry points from installed packages."
+      }
+    },
+    {
+      "id": "etcpak",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "etcpak",
+        "version": "0.9.13",
+        "summary": "python wrapper for etcpak"
+      }
+    },
+    {
+      "id": "exceptiongroup",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "exceptiongroup",
+        "version": "1.2.2",
+        "summary": "Backport of PEP 654 (exception groups)"
+      }
+    },
+    {
+      "id": "executing",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "executing",
+        "version": "2.2.0",
+        "summary": "Get the currently executing AST node of a frame, and other information"
+      }
+    },
+    {
+      "id": "fastapi",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "fastapi",
+        "version": "0.115.6",
+        "summary": "FastAPI framework, high performance, easy to learn, fast to code, ready for production"
+      }
+    },
+    {
+      "id": "fastjsonschema",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "fastjsonschema",
+        "version": "2.21.1",
+        "summary": "Fastest Python implementation of JSON schema"
+      }
+    },
+    {
+      "id": "filelock",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "filelock",
+        "version": "3.18.0",
+        "summary": "A platform independent file lock."
+      }
+    },
+    {
+      "id": "filetype",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "filetype",
+        "version": "1.2.0",
+        "summary": "Infer file type and MIME type of any file/buffer. No external dependencies."
+      }
+    },
+    {
+      "id": "flatbuffers",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "flatbuffers",
+        "version": "25.12.19",
+        "summary": "The FlatBuffers serialization format for Python"
+      }
+    },
+    {
+      "id": "fonttools",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "fonttools",
+        "version": "4.62.1",
+        "summary": "Tools to manipulate font files"
+      }
+    },
+    {
+      "id": "fqdn",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "fqdn",
+        "version": "1.5.1",
+        "summary": "Validates fully-qualified domain names against RFC 1123, so that they are acceptable to modern bowsers"
+      }
+    },
+    {
+      "id": "frida",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "frida",
+        "version": "17.9.1",
+        "summary": "Dynamic instrumentation toolkit for developers, reverse-engineers, and security researchers"
+      }
+    },
+    {
+      "id": "frida_tools",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "frida-tools",
+        "version": "14.8.1",
+        "summary": "Frida CLI tools"
+      }
+    },
+    {
+      "id": "frozenlist",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "frozenlist",
+        "version": "1.5.0",
+        "summary": "A list-like structure which implements collections.abc.MutableSequence"
+      }
+    },
+    {
+      "id": "fsspec",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "fsspec",
+        "version": "2025.3.2",
+        "summary": "File-system specification"
+      }
+    },
+    {
+      "id": "ftfy",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "ftfy",
+        "version": "6.3.1",
+        "summary": "Fixes mojibake and other problems with Unicode, after the fact"
+      }
+    },
+    {
+      "id": "future",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "future",
+        "version": "1.0.0",
+        "summary": "Clean single-source support for Python 3 and 2"
+      }
+    },
+    {
+      "id": "gast",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "gast",
+        "version": "0.7.0",
+        "summary": "Python AST that abstracts the underlying Python version"
+      }
+    },
+    {
+      "id": "gevent",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "gevent",
+        "version": "24.11.1",
+        "summary": "Coroutine-based network library"
+      }
+    },
+    {
+      "id": "gevent_websocket",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "gevent-websocket",
+        "version": "0.10.1",
+        "summary": "Websocket handler for the gevent pywsgi server, a Python network library"
+      }
+    },
+    {
+      "id": "google_auth",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "google-auth",
+        "version": "2.52.0",
+        "summary": "Google Authentication Library"
+      }
+    },
+    {
+      "id": "google_genai",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "google-genai",
+        "version": "1.75.0",
+        "summary": "GenAI Python SDK"
+      }
+    },
+    {
+      "id": "google_pasta",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "google-pasta",
+        "version": "0.2.0",
+        "summary": "pasta is an AST-based Python refactoring library"
+      }
+    },
+    {
+      "id": "greenlet",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "greenlet",
+        "version": "3.2.0",
+        "summary": "Lightweight in-process concurrent programming"
+      }
+    },
+    {
+      "id": "grpcio",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "grpcio",
+        "version": "1.80.0",
+        "summary": "HTTP/2-based RPC framework"
+      }
+    },
+    {
+      "id": "h11",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "h11",
+        "version": "0.14.0",
+        "summary": "A pure-Python, bring-your-own-I/O implementation of HTTP/1.1"
+      }
+    },
+    {
+      "id": "h5py",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "h5py",
+        "version": "3.14.0",
+        "summary": "Read and write HDF5 files from Python"
+      }
+    },
+    {
+      "id": "hoardy_adb",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "hoardy-adb",
+        "version": "2.0.0",
+        "summary": "A simple front-end for `adb` and a tool that can list contens of, unpack, and convert Android Backup files to TAR files and back, decrypt, encrypt, split them into by-app pieces, e"
+      }
+    },
+    {
+      "id": "html5lib",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "html5lib",
+        "version": "1.1",
+        "summary": "HTML parser based on the WHATWG HTML specification"
+      }
+    },
+    {
+      "id": "httpcore",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "httpcore",
+        "version": "1.0.8",
+        "summary": "A minimal low-level HTTP client."
+      }
+    },
+    {
+      "id": "httptools",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "httptools",
+        "version": "0.7.1",
+        "summary": "A collection of framework independent HTTP protocol utils."
+      }
+    },
+    {
+      "id": "httpx",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "httpx",
+        "version": "0.28.1",
+        "summary": "The next generation HTTP client."
+      }
+    },
+    {
+      "id": "huggingface_hub",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "huggingface_hub",
+        "version": "0.36.2",
+        "summary": "Client library to download and publish models, datasets and other repos on the huggingface.co hub"
+      }
+    },
+    {
+      "id": "identify",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "identify",
+        "version": "2.6.19",
+        "summary": "File identification library for Python"
+      }
+    },
+    {
+      "id": "idna",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "idna",
+        "version": "3.10",
+        "summary": "Internationalized Domain Names in Applications (IDNA)"
+      }
+    },
+    {
+      "id": "ifaddr",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "ifaddr",
+        "version": "0.1.7",
+        "summary": "Cross-platform network interface and IP address enumeration library"
+      }
+    },
+    {
+      "id": "iniconfig",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "iniconfig",
+        "version": "2.1.0",
+        "summary": "brain-dead simple config-ini parsing"
+      }
+    },
+    {
+      "id": "ipykernel",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "ipykernel",
+        "version": "6.29.5",
+        "summary": "IPython Kernel for Jupyter"
+      }
+    },
+    {
+      "id": "ipython",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "ipython",
+        "version": "9.1.0",
+        "summary": "IPython: Productive Interactive Computing"
+      }
+    },
+    {
+      "id": "ipython_genutils",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "ipython-genutils",
+        "version": "0.2.0",
+        "summary": "Vestigial utilities from IPython"
+      }
+    },
+    {
+      "id": "ipython_pygments_lexers",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "ipython_pygments_lexers",
+        "version": "1.1.1",
+        "summary": "Defines a variety of Pygments lexers for highlighting IPython code."
+      }
+    },
+    {
+      "id": "ipywidgets",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "ipywidgets",
+        "version": "8.1.6",
+        "summary": "Jupyter interactive widgets"
+      }
+    },
+    {
+      "id": "isoduration",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "isoduration",
+        "version": "20.11.0",
+        "summary": "Operations with ISO 8601 durations"
+      }
+    },
+    {
+      "id": "jedi",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "jedi",
+        "version": "0.19.2",
+        "summary": "An autocompletion tool for Python that can be used for text editors."
+      }
+    },
+    {
+      "id": "jinja2",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "Jinja2",
+        "version": "3.1.6",
+        "summary": "A very fast and expressive template engine."
+      }
+    },
+    {
+      "id": "jiter",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "jiter",
+        "version": "0.14.0",
+        "summary": "Fast iterable JSON parser."
+      }
+    },
+    {
+      "id": "joblib",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "joblib",
+        "version": "1.5.2",
+        "summary": "Lightweight pipelining with Python functions"
+      }
+    },
+    {
+      "id": "json5",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "json5",
+        "version": "0.12.0",
+        "summary": "A Python implementation of the JSON5 data format."
+      }
+    },
+    {
+      "id": "jsonpointer",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "jsonpointer",
+        "version": "3.0.0",
+        "summary": "Identify specific nodes in a JSON document (RFC 6901) "
+      }
+    },
+    {
+      "id": "jsonschema",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "jsonschema",
+        "version": "4.23.0",
+        "summary": "An implementation of JSON Schema validation for Python"
+      }
+    },
+    {
+      "id": "jsonschema_specifications",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "jsonschema-specifications",
+        "version": "2024.10.1",
+        "summary": "The JSON Schema meta-schemas and vocabularies, exposed as a Registry"
+      }
+    },
+    {
+      "id": "jupyter",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "jupyter",
+        "version": "1.1.1",
+        "summary": "Jupyter metapackage. Install all the Jupyter components in one go."
+      }
+    },
+    {
+      "id": "jupyterlab",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "jupyterlab",
+        "version": "4.4.0",
+        "summary": "JupyterLab computational environment"
+      }
+    },
+    {
+      "id": "jupyterlab_pygments",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "jupyterlab_pygments",
+        "version": "0.3.0",
+        "summary": "Pygments theme using JupyterLab CSS variables"
+      }
+    },
+    {
+      "id": "jupyterlab_server",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "jupyterlab_server",
+        "version": "2.27.3",
+        "summary": "A set of server components for JupyterLab and JupyterLab like applications."
+      }
+    },
+    {
+      "id": "jupyterlab_widgets",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "jupyterlab_widgets",
+        "version": "3.0.14",
+        "summary": "Jupyter interactive widgets for JupyterLab"
+      }
+    },
+    {
+      "id": "jupyter_client",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "jupyter_client",
+        "version": "8.6.3",
+        "summary": "Jupyter protocol implementation and client libraries"
+      }
+    },
+    {
+      "id": "jupyter_console",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "jupyter-console",
+        "version": "6.6.3",
+        "summary": "Jupyter terminal console"
+      }
+    },
+    {
+      "id": "jupyter_core",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "jupyter_core",
+        "version": "5.7.2",
+        "summary": "Jupyter core package. A base package on which Jupyter projects rely."
+      }
+    },
+    {
+      "id": "jupyter_events",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "jupyter-events",
+        "version": "0.12.0",
+        "summary": "Jupyter Event System library"
+      }
+    },
+    {
+      "id": "jupyter_lsp",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "jupyter-lsp",
+        "version": "2.2.5",
+        "summary": "Multi-Language Server WebSocket proxy for Jupyter Notebook/Lab server"
+      }
+    },
+    {
+      "id": "jupyter_server",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "jupyter_server",
+        "version": "2.15.0",
+        "summary": "The backend—i.e. core services, APIs, and REST endpoints—to Jupyter web applications."
+      }
+    },
+    {
+      "id": "jupyter_server_terminals",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "jupyter_server_terminals",
+        "version": "0.5.3",
+        "summary": "A Jupyter Server Extension Providing Terminals."
+      }
+    },
+    {
+      "id": "keras",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "keras",
+        "version": "3.14.0",
+        "summary": "Multi-backend Keras"
+      }
+    },
+    {
+      "id": "keyboard",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "keyboard",
+        "version": "0.13.5",
+        "summary": "Hook and simulate keyboard events on Windows and Linux"
+      }
+    },
+    {
+      "id": "kisstdlib",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "kisstdlib",
+        "version": "0.0.11",
+        "summary": "System programming with conceptually and algebraically simple primitives."
+      }
+    },
+    {
+      "id": "kiwisolver",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "kiwisolver",
+        "version": "1.5.0",
+        "summary": "A fast implementation of the Cassowary constraint solver"
+      }
+    },
+    {
+      "id": "krakatau_noff",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "Krakatau-noff",
+        "version": "0.20181212",
+        "summary": "Analysis tools for Java .class files."
+      }
+    },
+    {
+      "id": "libclang",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "libclang",
+        "version": "18.1.1",
+        "summary": "Clang Python Bindings, mirrored from the official LLVM repo: https://github.com/llvm/llvm-project/tree/main/clang/bindings/python, to make the installation process easier."
+      }
+    },
+    {
+      "id": "libloader",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "libloader",
+        "version": "1.3.3",
+        "summary": "Quickly and easily load shared libraries on various platforms. Also includes a libloader.com module for loading com modules on Windows."
+      }
+    },
+    {
+      "id": "lief",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "lief",
+        "version": "0.16.5",
+        "summary": "Library to instrument executable formats"
+      }
+    },
+    {
+      "id": "lucia",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "lucia",
+        "version": "1.1.1",
+        "summary": "A cross platform, feature rich audio game engine written in Python."
+      }
+    },
+    {
+      "id": "lxml",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "lxml",
+        "version": "4.9.4",
+        "summary": "Powerful and Pythonic XML processing library combining libxml2/libxslt with the ElementTree API."
+      }
+    },
+    {
+      "id": "lz4",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "lz4",
+        "version": "4.4.4",
+        "summary": "LZ4 Bindings for Python"
+      }
+    },
+    {
+      "id": "markdown2",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "markdown2",
+        "version": "2.5.3",
+        "summary": "A fast and complete Python implementation of Markdown"
+      }
+    },
+    {
+      "id": "markdownify",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "markdownify",
+        "version": "1.2.2",
+        "summary": "Convert HTML to markdown."
+      }
+    },
+    {
+      "id": "markdown_it_py",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "markdown-it-py",
+        "version": "4.0.0",
+        "summary": "Python port of markdown-it. Markdown parsing, done right!"
+      }
+    },
+    {
+      "id": "marker_pdf",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "marker-pdf",
+        "version": "1.10.2",
+        "summary": "Convert documents to markdown with high speed and accuracy."
+      }
+    },
+    {
+      "id": "markupsafe",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "MarkupSafe",
+        "version": "3.0.2",
+        "summary": "Safely add untrusted strings to HTML/XML markup."
+      }
+    },
+    {
+      "id": "matplotlib",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "matplotlib",
+        "version": "3.10.9",
+        "summary": "Python plotting package"
+      }
+    },
+    {
+      "id": "matplotlib_inline",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "matplotlib-inline",
+        "version": "0.1.7",
+        "summary": "Inline Matplotlib backend for Jupyter"
+      }
+    },
+    {
+      "id": "mccabe",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "mccabe",
+        "version": "0.7.0",
+        "summary": "McCabe checker, plugin for flake8"
+      }
+    },
+    {
+      "id": "mdurl",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "mdurl",
+        "version": "0.1.2",
+        "summary": "Markdown URL utilities"
+      }
+    },
+    {
+      "id": "mechanize",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "mechanize",
+        "version": "0.4.10",
+        "summary": "Stateful, programmatic web browsing"
+      }
+    },
+    {
+      "id": "minidump",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "minidump",
+        "version": "0.0.24",
+        "summary": "Python library to parse Windows minidump file format"
+      }
+    },
+    {
+      "id": "mistune",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "mistune",
+        "version": "3.1.3",
+        "summary": "A sane and fast Markdown parser with useful plugins and renderers"
+      }
+    },
+    {
+      "id": "platform_utils",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "platform_utils",
+        "version": "",
+        "summary": "Referenced as a dependency."
+      }
+    },
+    {
+      "id": "pywin32",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "pywin32",
+        "version": "",
+        "summary": "Referenced as a dependency."
+      }
+    },
+    {
+      "id": "multidict",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "multidict",
+        "version": "",
+        "summary": "Referenced as a dependency."
+      }
+    },
+    {
+      "id": "propcache",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "propcache",
+        "version": "",
+        "summary": "Referenced as a dependency."
+      }
+    },
+    {
+      "id": "yarl",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "yarl",
+        "version": "",
+        "summary": "Referenced as a dependency."
+      }
+    },
+    {
+      "id": "typing_extensions",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "typing_extensions",
+        "version": "",
+        "summary": "Referenced as a dependency."
+      }
+    },
+    {
+      "id": "pydantic",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "pydantic",
+        "version": "",
+        "summary": "Referenced as a dependency."
+      }
+    },
+    {
+      "id": "sniffio",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "sniffio",
+        "version": "",
+        "summary": "Referenced as a dependency."
+      }
+    },
+    {
+      "id": "trio",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "trio",
+        "version": "",
+        "summary": "Referenced as a dependency."
+      }
+    },
+    {
+      "id": "psutil",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "psutil",
+        "version": "",
+        "summary": "Referenced as a dependency."
+      }
+    },
+    {
+      "id": "pytest",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "pytest",
+        "version": "",
+        "summary": "Referenced as a dependency."
+      }
+    },
+    {
+      "id": "packaging",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "packaging",
+        "version": "",
+        "summary": "Referenced as a dependency."
+      }
+    },
+    {
+      "id": "pre_commit",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "pre_commit",
+        "version": "",
+        "summary": "Referenced as a dependency."
+      }
+    },
+    {
+      "id": "wheel",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "wheel",
+        "version": "",
+        "summary": "Referenced as a dependency."
+      }
+    },
+    {
+      "id": "python_dateutil",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "python_dateutil",
+        "version": "",
+        "summary": "Referenced as a dependency."
+      }
+    },
+    {
+      "id": "types_python_dateutil",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "types_python_dateutil",
+        "version": "",
+        "summary": "Referenced as a dependency."
+      }
+    },
+    {
+      "id": "pytz",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "pytz",
+        "version": "",
+        "summary": "Referenced as a dependency."
+      }
+    },
+    {
+      "id": "pillow",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "pillow",
+        "version": "",
+        "summary": "Referenced as a dependency."
+      }
+    },
+    {
+      "id": "six",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "six",
+        "version": "",
+        "summary": "Referenced as a dependency."
+      }
+    },
+    {
+      "id": "tzdata",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "tzdata",
+        "version": "",
+        "summary": "Referenced as a dependency."
+      }
+    },
+    {
+      "id": "setuptools",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "setuptools",
+        "version": "",
+        "summary": "Referenced as a dependency."
+      }
+    },
+    {
+      "id": "soupsieve",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "soupsieve",
+        "version": "",
+        "summary": "Referenced as a dependency."
+      }
+    },
+    {
+      "id": "webencodings",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "webencodings",
+        "version": "",
+        "summary": "Referenced as a dependency."
+      }
+    },
+    {
+      "id": "tinycss2",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "tinycss2",
+        "version": "",
+        "summary": "Referenced as a dependency."
+      }
+    },
+    {
+      "id": "pycparser",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "pycparser",
+        "version": "",
+        "summary": "Referenced as a dependency."
+      }
+    },
+    {
+      "id": "traitlets",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "traitlets",
+        "version": "",
+        "summary": "Referenced as a dependency."
+      }
+    },
+    {
+      "id": "numpy",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "numpy",
+        "version": "",
+        "summary": "Referenced as a dependency."
+      }
+    },
+    {
+      "id": "selenium",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "selenium",
+        "version": "",
+        "summary": "Referenced as a dependency."
+      }
+    },
+    {
+      "id": "striprtf",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "striprtf",
+        "version": "",
+        "summary": "Referenced as a dependency."
+      }
+    },
+    {
+      "id": "pluggy",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "pluggy",
+        "version": "",
+        "summary": "Referenced as a dependency."
+      }
+    },
+    {
+      "id": "pynacl",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "pynacl",
+        "version": "",
+        "summary": "Referenced as a dependency."
+      }
+    },
+    {
+      "id": "black",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "black",
+        "version": "",
+        "summary": "Referenced as a dependency."
+      }
+    },
+    {
+      "id": "pyparsing",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "pyparsing",
+        "version": "",
+        "summary": "Referenced as a dependency."
+      }
+    },
+    {
+      "id": "texture2ddecoder",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "texture2ddecoder",
+        "version": "",
+        "summary": "Referenced as a dependency."
+      }
+    },
+    {
+      "id": "rich",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "rich",
+        "version": "",
+        "summary": "Referenced as a dependency."
+      }
+    },
+    {
+      "id": "starlette",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "starlette",
+        "version": "",
+        "summary": "Referenced as a dependency."
+      }
+    },
+    {
+      "id": "uvicorn",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "uvicorn",
+        "version": "",
+        "summary": "Referenced as a dependency."
+      }
+    },
+    {
+      "id": "pyyaml",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "pyyaml",
+        "version": "",
+        "summary": "Referenced as a dependency."
+      }
+    },
+    {
+      "id": "pydantic_settings",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "pydantic_settings",
+        "version": "",
+        "summary": "Referenced as a dependency."
+      }
+    },
+    {
+      "id": "virtualenv",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "virtualenv",
+        "version": "",
+        "summary": "Referenced as a dependency."
+      }
+    },
+    {
+      "id": "scipy",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "scipy",
+        "version": "",
+        "summary": "Referenced as a dependency."
+      }
+    },
+    {
+      "id": "sympy",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "sympy",
+        "version": "",
+        "summary": "Referenced as a dependency."
+      }
+    },
+    {
+      "id": "prompt_toolkit",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "prompt_toolkit",
+        "version": "",
+        "summary": "Referenced as a dependency."
+      }
+    },
+    {
+      "id": "pygments",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "pygments",
+        "version": "",
+        "summary": "Referenced as a dependency."
+      }
+    },
+    {
+      "id": "websockets",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "websockets",
+        "version": "",
+        "summary": "Referenced as a dependency."
+      }
+    },
+    {
+      "id": "requests",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "requests",
+        "version": "",
+        "summary": "Referenced as a dependency."
+      }
+    },
+    {
+      "id": "wcwidth",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "wcwidth",
+        "version": "",
+        "summary": "Referenced as a dependency."
+      }
+    },
+    {
+      "id": "zope_event",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "zope_event",
+        "version": "",
+        "summary": "Referenced as a dependency."
+      }
+    },
+    {
+      "id": "zope_interface",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "zope_interface",
+        "version": "",
+        "summary": "Referenced as a dependency."
+      }
+    },
+    {
+      "id": "pyasn1_modules",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "pyasn1_modules",
+        "version": "",
+        "summary": "Referenced as a dependency."
+      }
+    },
+    {
+      "id": "pyopenssl",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "pyopenssl",
+        "version": "",
+        "summary": "Referenced as a dependency."
+      }
+    },
+    {
+      "id": "urllib3",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "urllib3",
+        "version": "",
+        "summary": "Referenced as a dependency."
+      }
+    },
+    {
+      "id": "tenacity",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "tenacity",
+        "version": "",
+        "summary": "Referenced as a dependency."
+      }
+    },
+    {
+      "id": "protobuf",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "protobuf",
+        "version": "",
+        "summary": "Referenced as a dependency."
+      }
+    },
+    {
+      "id": "tqdm",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "tqdm",
+        "version": "",
+        "summary": "Referenced as a dependency."
+      }
+    },
+    {
+      "id": "torch",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "torch",
+        "version": "",
+        "summary": "Referenced as a dependency."
+      }
+    },
+    {
+      "id": "safetensors",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "safetensors",
+        "version": "",
+        "summary": "Referenced as a dependency."
+      }
+    },
+    {
+      "id": "tensorflow",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "tensorflow",
+        "version": "",
+        "summary": "Referenced as a dependency."
+      }
+    },
+    {
+      "id": "flake8",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "flake8",
+        "version": "",
+        "summary": "Referenced as a dependency."
+      }
+    },
+    {
+      "id": "nest_asyncio",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "nest_asyncio",
+        "version": "",
+        "summary": "Referenced as a dependency."
+      }
+    },
+    {
+      "id": "pyzmq",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "pyzmq",
+        "version": "",
+        "summary": "Referenced as a dependency."
+      }
+    },
+    {
+      "id": "tornado",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "tornado",
+        "version": "",
+        "summary": "Referenced as a dependency."
+      }
+    },
+    {
+      "id": "pyqt5",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "pyqt5",
+        "version": "",
+        "summary": "Referenced as a dependency."
+      }
+    },
+    {
+      "id": "stack_data",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "stack_data",
+        "version": "",
+        "summary": "Referenced as a dependency."
+      }
+    },
+    {
+      "id": "widgetsnbextension",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "widgetsnbextension",
+        "version": "",
+        "summary": "Referenced as a dependency."
+      }
+    },
+    {
+      "id": "parso",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "parso",
+        "version": "",
+        "summary": "Referenced as a dependency."
+      }
+    },
+    {
+      "id": "pip",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "pip",
+        "version": "",
+        "summary": "Referenced as a dependency."
+      }
+    },
+    {
+      "id": "referencing",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "referencing",
+        "version": "",
+        "summary": "Referenced as a dependency."
+      }
+    },
+    {
+      "id": "rpds_py",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "rpds_py",
+        "version": "",
+        "summary": "Referenced as a dependency."
+      }
+    },
+    {
+      "id": "rfc3339_validator",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "rfc3339_validator",
+        "version": "",
+        "summary": "Referenced as a dependency."
+      }
+    },
+    {
+      "id": "uri_template",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "uri_template",
+        "version": "",
+        "summary": "Referenced as a dependency."
+      }
+    },
+    {
+      "id": "webcolors",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "webcolors",
+        "version": "",
+        "summary": "Referenced as a dependency."
+      }
+    },
+    {
+      "id": "rfc3986_validator",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "rfc3986_validator",
+        "version": "",
+        "summary": "Referenced as a dependency."
+      }
+    },
+    {
+      "id": "notebook",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "notebook",
+        "version": "",
+        "summary": "Referenced as a dependency."
+      }
+    },
+    {
+      "id": "nbconvert",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "nbconvert",
+        "version": "",
+        "summary": "Referenced as a dependency."
+      }
+    },
+    {
+      "id": "notebook_shim",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "notebook_shim",
+        "version": "",
+        "summary": "Referenced as a dependency."
+      }
+    },
+    {
+      "id": "platformdirs",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "platformdirs",
+        "version": "",
+        "summary": "Referenced as a dependency."
+      }
+    },
+    {
+      "id": "python_json_logger",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "python_json_logger",
+        "version": "",
+        "summary": "Referenced as a dependency."
+      }
+    },
+    {
+      "id": "nbformat",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "nbformat",
+        "version": "",
+        "summary": "Referenced as a dependency."
+      }
+    },
+    {
+      "id": "overrides",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "overrides",
+        "version": "",
+        "summary": "Referenced as a dependency."
+      }
+    },
+    {
+      "id": "prometheus_client",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "prometheus_client",
+        "version": "",
+        "summary": "Referenced as a dependency."
+      }
+    },
+    {
+      "id": "pywinpty",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "pywinpty",
+        "version": "",
+        "summary": "Referenced as a dependency."
+      }
+    },
+    {
+      "id": "send2trash",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "send2trash",
+        "version": "",
+        "summary": "Referenced as a dependency."
+      }
+    },
+    {
+      "id": "terminado",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "terminado",
+        "version": "",
+        "summary": "Referenced as a dependency."
+      }
+    },
+    {
+      "id": "websocket_client",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "websocket_client",
+        "version": "",
+        "summary": "Referenced as a dependency."
+      }
+    },
+    {
+      "id": "namex",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "namex",
+        "version": "",
+        "summary": "Referenced as a dependency."
+      }
+    },
+    {
+      "id": "optree",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "optree",
+        "version": "",
+        "summary": "Referenced as a dependency."
+      }
+    },
+    {
+      "id": "ml_dtypes",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "ml_dtypes",
+        "version": "",
+        "summary": "Referenced as a dependency."
+      }
+    },
+    {
+      "id": "sortedcontainers",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "sortedcontainers",
+        "version": "",
+        "summary": "Referenced as a dependency."
+      }
+    },
+    {
+      "id": "pygame",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "pygame",
+        "version": "",
+        "summary": "Referenced as a dependency."
+      }
+    },
+    {
+      "id": "pycryptodomex",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "pycryptodomex",
+        "version": "",
+        "summary": "Referenced as a dependency."
+      }
+    },
+    {
+      "id": "pysoundfile",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "pysoundfile",
+        "version": "",
+        "summary": "Referenced as a dependency."
+      }
+    },
+    {
+      "id": "sound_lib",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "sound_lib",
+        "version": "",
+        "summary": "Referenced as a dependency."
+      }
+    },
+    {
+      "id": "versioneer",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "versioneer",
+        "version": "",
+        "summary": "Referenced as a dependency."
+      }
+    },
+    {
+      "id": "pypiwin32",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "pypiwin32",
+        "version": "",
+        "summary": "Referenced as a dependency."
+      }
+    },
+    {
+      "id": "openai",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "openai",
+        "version": "",
+        "summary": "Referenced as a dependency."
+      }
+    },
+    {
+      "id": "pdftext",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "pdftext",
+        "version": "",
+        "summary": "Referenced as a dependency."
+      }
+    },
+    {
+      "id": "python_dotenv",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "python_dotenv",
+        "version": "",
+        "summary": "Referenced as a dependency."
+      }
+    },
+    {
+      "id": "rapidfuzz",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "rapidfuzz",
+        "version": "",
+        "summary": "Referenced as a dependency."
+      }
+    },
+    {
+      "id": "regex",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "regex",
+        "version": "",
+        "summary": "Referenced as a dependency."
+      }
+    }
+  ],
+  "edges": [
+    {
+      "type": "REQUIRES",
+      "source": "abarms",
+      "target": "hoardy_adb",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "accessible_output2",
+      "target": "libloader",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "accessible_output2",
+      "target": "platform_utils",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "accessible_output2",
+      "target": "pywin32",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "aiohttp",
+      "target": "aiohappyeyeballs",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "aiohttp",
+      "target": "aiosignal",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "aiohttp",
+      "target": "async_timeout",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "aiohttp",
+      "target": "attrs",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "aiohttp",
+      "target": "frozenlist",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "aiohttp",
+      "target": "multidict",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "aiohttp",
+      "target": "propcache",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "aiohttp",
+      "target": "yarl",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "aiohttp",
+      "target": "brotli",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "aioredis",
+      "target": "async_timeout",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "aioredis",
+      "target": "typing_extensions",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "aiosignal",
+      "target": "frozenlist",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "annotated_types",
+      "target": "typing_extensions",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "anthropic",
+      "target": "anyio",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "anthropic",
+      "target": "distro",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "anthropic",
+      "target": "httpx",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "anthropic",
+      "target": "jiter",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "anthropic",
+      "target": "pydantic",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "anthropic",
+      "target": "sniffio",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "anthropic",
+      "target": "typing_extensions",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "anthropic",
+      "target": "google_auth",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "anyio",
+      "target": "exceptiongroup",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "anyio",
+      "target": "idna",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "anyio",
+      "target": "sniffio",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "anyio",
+      "target": "typing_extensions",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "anyio",
+      "target": "trio",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "anyio",
+      "target": "anyio",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "anyio",
+      "target": "psutil",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "anyio",
+      "target": "pytest",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "anyio",
+      "target": "packaging",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "argon2_cffi",
+      "target": "argon2_cffi_bindings",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "argon2_cffi",
+      "target": "typing_extensions",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "argon2_cffi",
+      "target": "argon2_cffi",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "argon2_cffi",
+      "target": "pytest",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "argon2_cffi_bindings",
+      "target": "cffi",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "argon2_cffi_bindings",
+      "target": "pytest",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "argon2_cffi_bindings",
+      "target": "pre_commit",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "argon2_cffi_bindings",
+      "target": "wheel",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "arrow",
+      "target": "python_dateutil",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "arrow",
+      "target": "types_python_dateutil",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "arrow",
+      "target": "pre_commit",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "arrow",
+      "target": "pytest",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "arrow",
+      "target": "pytz",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "astc_encoder_py",
+      "target": "archspec",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "astc_encoder_py",
+      "target": "pytest",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "astc_encoder_py",
+      "target": "pillow",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "astc_encoder_py",
+      "target": "psutil",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "asttokens",
+      "target": "pytest",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "astunparse",
+      "target": "wheel",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "astunparse",
+      "target": "six",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "async_lru",
+      "target": "typing_extensions",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "attrs",
+      "target": "cloudpickle",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "attrs",
+      "target": "pytest",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "babel",
+      "target": "pytz",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "babel",
+      "target": "tzdata",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "babel",
+      "target": "jinja2",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "babel",
+      "target": "pytest",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "babel",
+      "target": "setuptools",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "bcrypt",
+      "target": "pytest",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "beautifulsoup4",
+      "target": "soupsieve",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "beautifulsoup4",
+      "target": "typing_extensions",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "beautifulsoup4",
+      "target": "chardet",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "beautifulsoup4",
+      "target": "charset_normalizer",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "beautifulsoup4",
+      "target": "html5lib",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "beautifulsoup4",
+      "target": "lxml",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "bleach",
+      "target": "webencodings",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "bleach",
+      "target": "tinycss2",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "bottle_websocket",
+      "target": "bottle",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "bottle_websocket",
+      "target": "gevent_websocket",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "bson",
+      "target": "python_dateutil",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "bson",
+      "target": "six",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "cffi",
+      "target": "pycparser",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "click",
+      "target": "colorama",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "clr_loader",
+      "target": "cffi",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "comm",
+      "target": "traitlets",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "comm",
+      "target": "pytest",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "configparser",
+      "target": "pytest",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "contourpy",
+      "target": "numpy",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "contourpy",
+      "target": "selenium",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "contourpy",
+      "target": "contourpy",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "contourpy",
+      "target": "matplotlib",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "contourpy",
+      "target": "pillow",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "contourpy",
+      "target": "pytest",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "cryptography",
+      "target": "cffi",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "cryptography",
+      "target": "bcrypt",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "cryptography",
+      "target": "pytest",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "cryptography",
+      "target": "certifi",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "cryptography",
+      "target": "click",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "cx_freeze",
+      "target": "filelock",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "cx_freeze",
+      "target": "packaging",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "cx_freeze",
+      "target": "setuptools",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "cx_freeze",
+      "target": "cabarchive",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "cx_freeze",
+      "target": "cx_logging",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "cx_freeze",
+      "target": "lief",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "cx_freeze",
+      "target": "striprtf",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "cx_freeze",
+      "target": "pre_commit",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "cx_freeze",
+      "target": "pytest",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "cx_freeze",
+      "target": "pluggy",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "cycler",
+      "target": "ipython",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "cycler",
+      "target": "matplotlib",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "cycler",
+      "target": "pytest",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "discord_py",
+      "target": "aiohttp",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "discord_py",
+      "target": "pynacl",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "discord_py",
+      "target": "typing_extensions",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "discord_py",
+      "target": "brotli",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "discord_py",
+      "target": "pytest",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "discord_py",
+      "target": "tzdata",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "discord_py",
+      "target": "black",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "eel",
+      "target": "bottle",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "eel",
+      "target": "bottle_websocket",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "eel",
+      "target": "future",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "eel",
+      "target": "pyparsing",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "eel",
+      "target": "typing_extensions",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "eel",
+      "target": "jinja2",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "etcpak",
+      "target": "archspec",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "etcpak",
+      "target": "pytest",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "etcpak",
+      "target": "pillow",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "etcpak",
+      "target": "texture2ddecoder",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "exceptiongroup",
+      "target": "pytest",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "executing",
+      "target": "asttokens",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "executing",
+      "target": "ipython",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "executing",
+      "target": "pytest",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "executing",
+      "target": "rich",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "fastapi",
+      "target": "starlette",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "fastapi",
+      "target": "pydantic",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "fastapi",
+      "target": "typing_extensions",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "fastapi",
+      "target": "httpx",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "fastapi",
+      "target": "jinja2",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "fastapi",
+      "target": "uvicorn",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "fastapi",
+      "target": "pyyaml",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "fastapi",
+      "target": "pydantic_settings",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "fastjsonschema",
+      "target": "colorama",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "fastjsonschema",
+      "target": "jsonschema",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "fastjsonschema",
+      "target": "pytest",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "filelock",
+      "target": "pytest",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "filelock",
+      "target": "virtualenv",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "filelock",
+      "target": "typing_extensions",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "fonttools",
+      "target": "lxml",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "fonttools",
+      "target": "brotli",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "fonttools",
+      "target": "lz4",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "fonttools",
+      "target": "scipy",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "fonttools",
+      "target": "matplotlib",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "fonttools",
+      "target": "sympy",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "frida",
+      "target": "typing_extensions",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "frida_tools",
+      "target": "colorama",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "frida_tools",
+      "target": "frida",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "frida_tools",
+      "target": "prompt_toolkit",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "frida_tools",
+      "target": "pygments",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "frida_tools",
+      "target": "websockets",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "fsspec",
+      "target": "pre_commit",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "fsspec",
+      "target": "yarl",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "fsspec",
+      "target": "requests",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "fsspec",
+      "target": "aiohttp",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "ftfy",
+      "target": "wcwidth",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "gevent",
+      "target": "zope_event",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "gevent",
+      "target": "zope_interface",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "gevent",
+      "target": "greenlet",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "gevent",
+      "target": "cffi",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "gevent",
+      "target": "idna",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "gevent",
+      "target": "psutil",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "gevent",
+      "target": "requests",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "gevent_websocket",
+      "target": "gevent",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "google_auth",
+      "target": "pyasn1_modules",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "google_auth",
+      "target": "cryptography",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "google_auth",
+      "target": "aiohttp",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "google_auth",
+      "target": "requests",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "google_auth",
+      "target": "pyopenssl",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "google_auth",
+      "target": "grpcio",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "google_auth",
+      "target": "pytest",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "google_auth",
+      "target": "urllib3",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "google_auth",
+      "target": "packaging",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "google_genai",
+      "target": "anyio",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "google_genai",
+      "target": "google_auth",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "google_genai",
+      "target": "httpx",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "google_genai",
+      "target": "pydantic",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "google_genai",
+      "target": "requests",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "google_genai",
+      "target": "tenacity",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "google_genai",
+      "target": "websockets",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "google_genai",
+      "target": "typing_extensions",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "google_genai",
+      "target": "distro",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "google_genai",
+      "target": "sniffio",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "google_genai",
+      "target": "aiohttp",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "google_genai",
+      "target": "protobuf",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "google_genai",
+      "target": "pyopenssl",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "google_pasta",
+      "target": "six",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "greenlet",
+      "target": "psutil",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "grpcio",
+      "target": "typing_extensions",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "h11",
+      "target": "typing_extensions",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "h5py",
+      "target": "numpy",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "hoardy_adb",
+      "target": "kisstdlib",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "hoardy_adb",
+      "target": "cryptography",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "html5lib",
+      "target": "six",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "html5lib",
+      "target": "webencodings",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "html5lib",
+      "target": "chardet",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "html5lib",
+      "target": "lxml",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "httpcore",
+      "target": "certifi",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "httpcore",
+      "target": "h11",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "httpcore",
+      "target": "anyio",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "httpcore",
+      "target": "trio",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "httpx",
+      "target": "anyio",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "httpx",
+      "target": "certifi",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "httpx",
+      "target": "httpcore",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "httpx",
+      "target": "idna",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "httpx",
+      "target": "brotli",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "httpx",
+      "target": "click",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "httpx",
+      "target": "pygments",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "httpx",
+      "target": "rich",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "huggingface_hub",
+      "target": "filelock",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "huggingface_hub",
+      "target": "fsspec",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "huggingface_hub",
+      "target": "packaging",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "huggingface_hub",
+      "target": "pyyaml",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "huggingface_hub",
+      "target": "requests",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "huggingface_hub",
+      "target": "tqdm",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "huggingface_hub",
+      "target": "typing_extensions",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "huggingface_hub",
+      "target": "aiohttp",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "huggingface_hub",
+      "target": "fastapi",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "huggingface_hub",
+      "target": "httpx",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "huggingface_hub",
+      "target": "torch",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "huggingface_hub",
+      "target": "safetensors",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "huggingface_hub",
+      "target": "tensorflow",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "huggingface_hub",
+      "target": "keras",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "idna",
+      "target": "pytest",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "idna",
+      "target": "flake8",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "ipykernel",
+      "target": "comm",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "ipykernel",
+      "target": "debugpy",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "ipykernel",
+      "target": "ipython",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "ipykernel",
+      "target": "jupyter_client",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "ipykernel",
+      "target": "jupyter_core",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "ipykernel",
+      "target": "matplotlib_inline",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "ipykernel",
+      "target": "nest_asyncio",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "ipykernel",
+      "target": "packaging",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "ipykernel",
+      "target": "psutil",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "ipykernel",
+      "target": "pyzmq",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "ipykernel",
+      "target": "tornado",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "ipykernel",
+      "target": "traitlets",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "ipykernel",
+      "target": "matplotlib",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "ipykernel",
+      "target": "trio",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "ipykernel",
+      "target": "pyqt5",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "ipykernel",
+      "target": "pre_commit",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "ipython",
+      "target": "colorama",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "ipython",
+      "target": "decorator",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "ipython",
+      "target": "ipython_pygments_lexers",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "ipython",
+      "target": "jedi",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "ipython",
+      "target": "matplotlib_inline",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "ipython",
+      "target": "prompt_toolkit",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "ipython",
+      "target": "pygments",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "ipython",
+      "target": "stack_data",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "ipython",
+      "target": "traitlets",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "ipython",
+      "target": "typing_extensions",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "ipython",
+      "target": "black",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "ipython",
+      "target": "exceptiongroup",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "ipython",
+      "target": "ipykernel",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "ipython",
+      "target": "ipython",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "ipython",
+      "target": "matplotlib",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "ipython",
+      "target": "setuptools",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "ipython",
+      "target": "pytest",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "ipython",
+      "target": "packaging",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "ipython_pygments_lexers",
+      "target": "pygments",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "ipywidgets",
+      "target": "comm",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "ipywidgets",
+      "target": "ipython",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "ipywidgets",
+      "target": "traitlets",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "ipywidgets",
+      "target": "widgetsnbextension",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "ipywidgets",
+      "target": "jupyterlab_widgets",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "ipywidgets",
+      "target": "jsonschema",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "ipywidgets",
+      "target": "ipykernel",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "ipywidgets",
+      "target": "pytest",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "ipywidgets",
+      "target": "pytz",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "isoduration",
+      "target": "arrow",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "jedi",
+      "target": "parso",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "jedi",
+      "target": "jinja2",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "jedi",
+      "target": "markupsafe",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "jedi",
+      "target": "pygments",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "jedi",
+      "target": "babel",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "jedi",
+      "target": "chardet",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "jedi",
+      "target": "docutils",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "jedi",
+      "target": "future",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "jedi",
+      "target": "idna",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "jedi",
+      "target": "packaging",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "jedi",
+      "target": "pyparsing",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "jedi",
+      "target": "pytz",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "jedi",
+      "target": "requests",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "jedi",
+      "target": "six",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "jedi",
+      "target": "urllib3",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "jedi",
+      "target": "flake8",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "jinja2",
+      "target": "markupsafe",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "jinja2",
+      "target": "babel",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "json5",
+      "target": "pip",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "jsonschema",
+      "target": "attrs",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "jsonschema",
+      "target": "jsonschema_specifications",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "jsonschema",
+      "target": "referencing",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "jsonschema",
+      "target": "rpds_py",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "jsonschema",
+      "target": "fqdn",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "jsonschema",
+      "target": "idna",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "jsonschema",
+      "target": "isoduration",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "jsonschema",
+      "target": "jsonpointer",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "jsonschema",
+      "target": "rfc3339_validator",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "jsonschema",
+      "target": "uri_template",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "jsonschema",
+      "target": "webcolors",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "jsonschema",
+      "target": "rfc3986_validator",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "jsonschema_specifications",
+      "target": "referencing",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "jupyter",
+      "target": "notebook",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "jupyter",
+      "target": "jupyter_console",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "jupyter",
+      "target": "nbconvert",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "jupyter",
+      "target": "ipykernel",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "jupyter",
+      "target": "ipywidgets",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "jupyter",
+      "target": "jupyterlab",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "jupyterlab",
+      "target": "async_lru",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "jupyterlab",
+      "target": "httpx",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "jupyterlab",
+      "target": "ipykernel",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "jupyterlab",
+      "target": "jinja2",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "jupyterlab",
+      "target": "jupyter_core",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "jupyterlab",
+      "target": "jupyter_lsp",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "jupyterlab",
+      "target": "jupyter_server",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "jupyterlab",
+      "target": "jupyterlab_server",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "jupyterlab",
+      "target": "notebook_shim",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "jupyterlab",
+      "target": "packaging",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "jupyterlab",
+      "target": "setuptools",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "jupyterlab",
+      "target": "tornado",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "jupyterlab",
+      "target": "traitlets",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "jupyterlab",
+      "target": "pre_commit",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "jupyterlab",
+      "target": "pytest",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "jupyterlab_server",
+      "target": "babel",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "jupyterlab_server",
+      "target": "jinja2",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "jupyterlab_server",
+      "target": "json5",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "jupyterlab_server",
+      "target": "jsonschema",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "jupyterlab_server",
+      "target": "jupyter_server",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "jupyterlab_server",
+      "target": "packaging",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "jupyterlab_server",
+      "target": "requests",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "jupyterlab_server",
+      "target": "mistune",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "jupyterlab_server",
+      "target": "ipykernel",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "jupyterlab_server",
+      "target": "pytest",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "jupyter_client",
+      "target": "jupyter_core",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "jupyter_client",
+      "target": "python_dateutil",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "jupyter_client",
+      "target": "pyzmq",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "jupyter_client",
+      "target": "tornado",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "jupyter_client",
+      "target": "traitlets",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "jupyter_client",
+      "target": "ipykernel",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "jupyter_client",
+      "target": "pre_commit",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "jupyter_client",
+      "target": "pytest",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "jupyter_console",
+      "target": "ipykernel",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "jupyter_console",
+      "target": "ipython",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "jupyter_console",
+      "target": "jupyter_client",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "jupyter_console",
+      "target": "jupyter_core",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "jupyter_console",
+      "target": "prompt_toolkit",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "jupyter_console",
+      "target": "pygments",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "jupyter_console",
+      "target": "pyzmq",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "jupyter_console",
+      "target": "traitlets",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "jupyter_console",
+      "target": "pytest",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "jupyter_core",
+      "target": "platformdirs",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "jupyter_core",
+      "target": "pywin32",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "jupyter_core",
+      "target": "traitlets",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "jupyter_core",
+      "target": "ipykernel",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "jupyter_core",
+      "target": "pre_commit",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "jupyter_core",
+      "target": "pytest",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "jupyter_events",
+      "target": "jsonschema",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "jupyter_events",
+      "target": "packaging",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "jupyter_events",
+      "target": "python_json_logger",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "jupyter_events",
+      "target": "pyyaml",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "jupyter_events",
+      "target": "referencing",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "jupyter_events",
+      "target": "rfc3339_validator",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "jupyter_events",
+      "target": "rfc3986_validator",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "jupyter_events",
+      "target": "traitlets",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "jupyter_events",
+      "target": "click",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "jupyter_events",
+      "target": "rich",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "jupyter_events",
+      "target": "pre_commit",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "jupyter_events",
+      "target": "pytest",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "jupyter_lsp",
+      "target": "jupyter_server",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "jupyter_server",
+      "target": "anyio",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "jupyter_server",
+      "target": "argon2_cffi",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "jupyter_server",
+      "target": "jinja2",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "jupyter_server",
+      "target": "jupyter_client",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "jupyter_server",
+      "target": "jupyter_core",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "jupyter_server",
+      "target": "jupyter_events",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "jupyter_server",
+      "target": "jupyter_server_terminals",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "jupyter_server",
+      "target": "nbconvert",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "jupyter_server",
+      "target": "nbformat",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "jupyter_server",
+      "target": "overrides",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "jupyter_server",
+      "target": "packaging",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "jupyter_server",
+      "target": "prometheus_client",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "jupyter_server",
+      "target": "pywinpty",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "jupyter_server",
+      "target": "pyzmq",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "jupyter_server",
+      "target": "send2trash",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "jupyter_server",
+      "target": "terminado",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "jupyter_server",
+      "target": "tornado",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "jupyter_server",
+      "target": "traitlets",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "jupyter_server",
+      "target": "websocket_client",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "jupyter_server",
+      "target": "ipykernel",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "jupyter_server_terminals",
+      "target": "pywinpty",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "jupyter_server_terminals",
+      "target": "terminado",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "jupyter_server_terminals",
+      "target": "jinja2",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "jupyter_server_terminals",
+      "target": "jupyter_server",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "jupyter_server_terminals",
+      "target": "mistune",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "jupyter_server_terminals",
+      "target": "nbformat",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "jupyter_server_terminals",
+      "target": "packaging",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "jupyter_server_terminals",
+      "target": "tornado",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "jupyter_server_terminals",
+      "target": "pytest",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "keras",
+      "target": "absl_py",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "keras",
+      "target": "numpy",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "keras",
+      "target": "rich",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "keras",
+      "target": "namex",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "keras",
+      "target": "h5py",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "keras",
+      "target": "optree",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "keras",
+      "target": "ml_dtypes",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "keras",
+      "target": "packaging",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "kisstdlib",
+      "target": "sortedcontainers",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "lucia",
+      "target": "pygame",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "lucia",
+      "target": "pycryptodomex",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "lucia",
+      "target": "pysoundfile",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "lucia",
+      "target": "numpy",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "lucia",
+      "target": "sound_lib",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "lucia",
+      "target": "accessible_output2",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "lucia",
+      "target": "bson",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "lucia",
+      "target": "versioneer",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "lucia",
+      "target": "pywin32",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "lucia",
+      "target": "pypiwin32",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "lxml",
+      "target": "html5lib",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "lxml",
+      "target": "beautifulsoup4",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "lxml",
+      "target": "cython",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "lz4",
+      "target": "pytest",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "lz4",
+      "target": "psutil",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "lz4",
+      "target": "flake8",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "markdown2",
+      "target": "pygments",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "markdownify",
+      "target": "beautifulsoup4",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "markdownify",
+      "target": "six",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "markdown_it_py",
+      "target": "mdurl",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "markdown_it_py",
+      "target": "psutil",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "markdown_it_py",
+      "target": "pytest",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "markdown_it_py",
+      "target": "mistune",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "markdown_it_py",
+      "target": "pyyaml",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "markdown_it_py",
+      "target": "ipykernel",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "markdown_it_py",
+      "target": "requests",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "marker_pdf",
+      "target": "pillow",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "marker_pdf",
+      "target": "anthropic",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "marker_pdf",
+      "target": "click",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "marker_pdf",
+      "target": "filetype",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "marker_pdf",
+      "target": "ftfy",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "marker_pdf",
+      "target": "google_genai",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "marker_pdf",
+      "target": "markdown2",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "marker_pdf",
+      "target": "markdownify",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "marker_pdf",
+      "target": "openai",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "marker_pdf",
+      "target": "pdftext",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "marker_pdf",
+      "target": "pre_commit",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "marker_pdf",
+      "target": "pydantic",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "marker_pdf",
+      "target": "pydantic_settings",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "marker_pdf",
+      "target": "python_dotenv",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "marker_pdf",
+      "target": "rapidfuzz",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "marker_pdf",
+      "target": "regex",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "marker_pdf",
+      "target": "scikit_learn",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "marker_pdf",
+      "target": "surya_ocr",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "marker_pdf",
+      "target": "torch",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "marker_pdf",
+      "target": "tqdm",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "marker_pdf",
+      "target": "transformers",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "matplotlib",
+      "target": "contourpy",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "matplotlib",
+      "target": "cycler",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "matplotlib",
+      "target": "fonttools",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "matplotlib",
+      "target": "kiwisolver",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "matplotlib",
+      "target": "numpy",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "matplotlib",
+      "target": "packaging",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "matplotlib",
+      "target": "pillow",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "matplotlib",
+      "target": "pyparsing",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "matplotlib",
+      "target": "python_dateutil",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "matplotlib",
+      "target": "setuptools",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "matplotlib_inline",
+      "target": "traitlets",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "mechanize",
+      "target": "html5lib",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "mechanize",
+      "target": "lxml",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "mechanize",
+      "target": "service_identity",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "mechanize",
+      "target": "six",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "mistune",
+      "target": "typing_extensions",
+      "properties": {}
+    }
+  ]
+}

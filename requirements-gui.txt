@@ -1,0 +1,5 @@
+# Optional GUI dependencies (install alongside requirements.txt)
+wxPython>=4.2.1
+httpx>=0.27.0
+matplotlib>=3.8.0
+networkx>=3.4.0
