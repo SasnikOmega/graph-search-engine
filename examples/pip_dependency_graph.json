@@ -1651,14 +1651,553 @@
       }
     },
     {
+      "id": "ml_dtypes",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "ml_dtypes",
+        "version": "0.5.4",
+        "summary": "ml_dtypes is a stand-alone implementation of several NumPy dtype extensions used in machine learning."
+      }
+    },
+    {
+      "id": "mouseinfo",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "MouseInfo",
+        "version": "0.1.3",
+        "summary": "An application to display XY position and RGB color information for the pixel currently under the mouse. Works on Python 2 and 3."
+      }
+    },
+    {
+      "id": "mpmath",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "mpmath",
+        "version": "1.3.0",
+        "summary": "Python library for arbitrary-precision floating-point arithmetic"
+      }
+    },
+    {
+      "id": "msgpack",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "msgpack",
+        "version": "1.1.0",
+        "summary": "MessagePack serializer"
+      }
+    },
+    {
+      "id": "mss",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "mss",
+        "version": "10.0.0",
+        "summary": "An ultra fast cross-platform multiple screenshots module in pure python using ctypes."
+      }
+    },
+    {
+      "id": "multidict",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "multidict",
+        "version": "6.4.3",
+        "summary": "multidict implementation"
+      }
+    },
+    {
+      "id": "mutagen",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "mutagen",
+        "version": "1.47.0",
+        "summary": "read and write audio tags for many formats"
+      }
+    },
+    {
+      "id": "naked",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "Naked",
+        "version": "0.1.32",
+        "summary": "A command line application framework"
+      }
+    },
+    {
+      "id": "namex",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "namex",
+        "version": "0.1.0",
+        "summary": "A simple utility to separate the implementation of your Python package and its public API surface."
+      }
+    },
+    {
+      "id": "nbclient",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "nbclient",
+        "version": "0.10.2",
+        "summary": "A client library for executing notebooks. Formerly nbconvert's ExecutePreprocessor."
+      }
+    },
+    {
+      "id": "nbconvert",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "nbconvert",
+        "version": "7.16.6",
+        "summary": "Converting Jupyter Notebooks (.ipynb files) to other formats.  Output formats include asciidoc, html, latex, markdown, pdf, py, rst, script.  nbconvert can be used both as a Python"
+      }
+    },
+    {
+      "id": "nbformat",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "nbformat",
+        "version": "5.10.4",
+        "summary": "The Jupyter Notebook format"
+      }
+    },
+    {
+      "id": "neo4j",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "neo4j",
+        "version": "5.27.0",
+        "summary": "Neo4j Bolt driver for Python"
+      }
+    },
+    {
+      "id": "nest_asyncio",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "nest-asyncio",
+        "version": "1.6.0",
+        "summary": "Patch asyncio to allow nested event loops"
+      }
+    },
+    {
+      "id": "networkx",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "networkx",
+        "version": "3.4.2",
+        "summary": "Python package for creating and manipulating graphs and networks"
+      }
+    },
+    {
+      "id": "nodeenv",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "nodeenv",
+        "version": "1.10.0",
+        "summary": "Node.js virtual environment builder"
+      }
+    },
+    {
+      "id": "notebook",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "notebook",
+        "version": "7.4.0",
+        "summary": "Jupyter Notebook - A web-based notebook environment for interactive computing"
+      }
+    },
+    {
+      "id": "notebook_shim",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "notebook_shim",
+        "version": "0.2.4",
+        "summary": "A shim layer for notebook traits and config"
+      }
+    },
+    {
+      "id": "numpy",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "numpy",
+        "version": "2.3.3",
+        "summary": "Fundamental package for array computing in Python"
+      }
+    },
+    {
+      "id": "openai",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "openai",
+        "version": "1.109.1",
+        "summary": "The official Python library for the openai API"
+      }
+    },
+    {
+      "id": "opencv_python_headless",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "opencv-python-headless",
+        "version": "4.11.0.86",
+        "summary": "Wrapper package for OpenCV python bindings."
+      }
+    },
+    {
+      "id": "optree",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "optree",
+        "version": "0.19.0",
+        "summary": "Optimized PyTree Utilities."
+      }
+    },
+    {
+      "id": "opt_einsum",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "opt_einsum",
+        "version": "3.4.0",
+        "summary": "Path optimization of einsum functions."
+      }
+    },
+    {
+      "id": "outcome",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "outcome",
+        "version": "1.3.0.post0",
+        "summary": "Capture the outcome of Python function calls."
+      }
+    },
+    {
+      "id": "overrides",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "overrides",
+        "version": "7.7.0",
+        "summary": "A decorator to automatically detect mismatch when overriding a method."
+      }
+    },
+    {
+      "id": "packaging",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "packaging",
+        "version": "24.2",
+        "summary": "Core utilities for Python packages"
+      }
+    },
+    {
+      "id": "pandas",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "pandas",
+        "version": "2.3.3",
+        "summary": "Powerful data structures for data analysis, time series, and statistics"
+      }
+    },
+    {
+      "id": "pandocfilters",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "pandocfilters",
+        "version": "1.5.1",
+        "summary": "Utilities for writing pandoc filters in python"
+      }
+    },
+    {
+      "id": "parso",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "parso",
+        "version": "0.8.4",
+        "summary": "A Python Parser"
+      }
+    },
+    {
+      "id": "patool",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "patool",
+        "version": "4.0.0",
+        "summary": "portable archive file manager"
+      }
+    },
+    {
+      "id": "pdftext",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "pdftext",
+        "version": "0.6.3",
+        "summary": "Extract structured text from pdfs quickly"
+      }
+    },
+    {
+      "id": "pefile",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "pefile",
+        "version": "2024.8.26",
+        "summary": "Python PE parsing module"
+      }
+    },
+    {
+      "id": "pickleshare",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "pickleshare",
+        "version": "0.7.5",
+        "summary": "Tiny 'shelve'-like database with concurrency support"
+      }
+    },
+    {
+      "id": "pillow",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "pillow",
+        "version": "10.4.0",
+        "summary": "Python Imaging Library (Fork)"
+      }
+    },
+    {
+      "id": "pip",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "pip",
+        "version": "25.2",
+        "summary": "The PyPA recommended tool for installing Python packages."
+      }
+    },
+    {
+      "id": "pipenv",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "pipenv",
+        "version": "2025.0.3",
+        "summary": "Python Development Workflow for Humans."
+      }
+    },
+    {
+      "id": "platformdirs",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "platformdirs",
+        "version": "4.4.0",
+        "summary": "A small Python package for determining appropriate platform-specific dirs, e.g. a `user data dir`."
+      }
+    },
+    {
       "id": "platform_utils",
       "labels": [
         "Module"
       ],
       "properties": {
         "display_name": "platform_utils",
-        "version": "",
-        "summary": "Referenced as a dependency."
+        "version": "1.6.0",
+        "summary": "Cross-platform utilities for accomplishing some tasks that the stdlib isn't equipped to provide"
+      }
+    },
+    {
+      "id": "pluggy",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "pluggy",
+        "version": "1.6.0",
+        "summary": "plugin and hook calling mechanisms for python"
+      }
+    },
+    {
+      "id": "plyer",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "plyer",
+        "version": "2.1.0",
+        "summary": "Platform-independent wrapper for platform-dependent APIs"
+      }
+    },
+    {
+      "id": "pre_commit",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "pre_commit",
+        "version": "4.6.0",
+        "summary": "A framework for managing and maintaining multi-language pre-commit hooks."
+      }
+    },
+    {
+      "id": "prometheus_client",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "prometheus_client",
+        "version": "0.21.1",
+        "summary": "Python client for the Prometheus monitoring system."
+      }
+    },
+    {
+      "id": "prompt_toolkit",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "prompt_toolkit",
+        "version": "3.0.51",
+        "summary": "Library for building powerful interactive command lines in Python"
+      }
+    },
+    {
+      "id": "propcache",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "propcache",
+        "version": "0.3.1",
+        "summary": "Accelerated property cache"
+      }
+    },
+    {
+      "id": "protobuf",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "protobuf",
+        "version": "7.34.1",
+        "summary": ""
+      }
+    },
+    {
+      "id": "psutil",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "psutil",
+        "version": "7.0.0",
+        "summary": "Cross-platform lib for process and system monitoring in Python.  NOTE: the syntax of this script MUST be kept compatible with Python 2.7."
+      }
+    },
+    {
+      "id": "pure_eval",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "pure_eval",
+        "version": "0.2.3",
+        "summary": "Safely evaluate AST nodes without side effects"
+      }
+    },
+    {
+      "id": "pure_python_adb",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "pure-python-adb",
+        "version": "0.3.0.dev0",
+        "summary": "Pure python implementation of the adb client"
+      }
+    },
+    {
+      "id": "pyaes",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "pyaes",
+        "version": "1.6.1",
+        "summary": "Pure-Python Implementation of the AES block-cipher and common modes of operation"
+      }
+    },
+    {
+      "id": "pyasn1",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "pyasn1",
+        "version": "0.6.1",
+        "summary": "Pure-Python implementation of ASN.1 types and DER/BER/CER codecs (X.208)"
       }
     },
     {
@@ -1669,29 +2208,7 @@
       "properties": {
         "display_name": "pywin32",
         "version": "",
-        "summary": "Referenced as a dependency."
-      }
-    },
-    {
-      "id": "multidict",
-      "labels": [
-        "Module"
-      ],
-      "properties": {
-        "display_name": "multidict",
-        "version": "",
-        "summary": "Referenced as a dependency."
-      }
-    },
-    {
-      "id": "propcache",
-      "labels": [
-        "Module"
-      ],
-      "properties": {
-        "display_name": "propcache",
-        "version": "",
-        "summary": "Referenced as a dependency."
+        "summary": "Present only as a dependency reference."
       }
     },
     {
@@ -1702,7 +2219,7 @@
       "properties": {
         "display_name": "yarl",
         "version": "",
-        "summary": "Referenced as a dependency."
+        "summary": "Present only as a dependency reference."
       }
     },
     {
@@ -1713,7 +2230,7 @@
       "properties": {
         "display_name": "typing_extensions",
         "version": "",
-        "summary": "Referenced as a dependency."
+        "summary": "Present only as a dependency reference."
       }
     },
     {
@@ -1724,7 +2241,7 @@
       "properties": {
         "display_name": "pydantic",
         "version": "",
-        "summary": "Referenced as a dependency."
+        "summary": "Present only as a dependency reference."
       }
     },
     {
@@ -1735,7 +2252,7 @@
       "properties": {
         "display_name": "sniffio",
         "version": "",
-        "summary": "Referenced as a dependency."
+        "summary": "Present only as a dependency reference."
       }
     },
     {
@@ -1746,18 +2263,7 @@
       "properties": {
         "display_name": "trio",
         "version": "",
-        "summary": "Referenced as a dependency."
-      }
-    },
-    {
-      "id": "psutil",
-      "labels": [
-        "Module"
-      ],
-      "properties": {
-        "display_name": "psutil",
-        "version": "",
-        "summary": "Referenced as a dependency."
+        "summary": "Present only as a dependency reference."
       }
     },
     {
@@ -1768,29 +2274,7 @@
       "properties": {
         "display_name": "pytest",
         "version": "",
-        "summary": "Referenced as a dependency."
-      }
-    },
-    {
-      "id": "packaging",
-      "labels": [
-        "Module"
-      ],
-      "properties": {
-        "display_name": "packaging",
-        "version": "",
-        "summary": "Referenced as a dependency."
-      }
-    },
-    {
-      "id": "pre_commit",
-      "labels": [
-        "Module"
-      ],
-      "properties": {
-        "display_name": "pre_commit",
-        "version": "",
-        "summary": "Referenced as a dependency."
+        "summary": "Present only as a dependency reference."
       }
     },
     {
@@ -1801,7 +2285,7 @@
       "properties": {
         "display_name": "wheel",
         "version": "",
-        "summary": "Referenced as a dependency."
+        "summary": "Present only as a dependency reference."
       }
     },
     {
@@ -1812,7 +2296,7 @@
       "properties": {
         "display_name": "python_dateutil",
         "version": "",
-        "summary": "Referenced as a dependency."
+        "summary": "Present only as a dependency reference."
       }
     },
     {
@@ -1823,7 +2307,7 @@
       "properties": {
         "display_name": "types_python_dateutil",
         "version": "",
-        "summary": "Referenced as a dependency."
+        "summary": "Present only as a dependency reference."
       }
     },
     {
@@ -1834,18 +2318,7 @@
       "properties": {
         "display_name": "pytz",
         "version": "",
-        "summary": "Referenced as a dependency."
-      }
-    },
-    {
-      "id": "pillow",
-      "labels": [
-        "Module"
-      ],
-      "properties": {
-        "display_name": "pillow",
-        "version": "",
-        "summary": "Referenced as a dependency."
+        "summary": "Present only as a dependency reference."
       }
     },
     {
@@ -1856,7 +2329,7 @@
       "properties": {
         "display_name": "six",
         "version": "",
-        "summary": "Referenced as a dependency."
+        "summary": "Present only as a dependency reference."
       }
     },
     {
@@ -1867,7 +2340,7 @@
       "properties": {
         "display_name": "tzdata",
         "version": "",
-        "summary": "Referenced as a dependency."
+        "summary": "Present only as a dependency reference."
       }
     },
     {
@@ -1878,7 +2351,7 @@
       "properties": {
         "display_name": "setuptools",
         "version": "",
-        "summary": "Referenced as a dependency."
+        "summary": "Present only as a dependency reference."
       }
     },
     {
@@ -1889,7 +2362,7 @@
       "properties": {
         "display_name": "soupsieve",
         "version": "",
-        "summary": "Referenced as a dependency."
+        "summary": "Present only as a dependency reference."
       }
     },
     {
@@ -1900,7 +2373,7 @@
       "properties": {
         "display_name": "webencodings",
         "version": "",
-        "summary": "Referenced as a dependency."
+        "summary": "Present only as a dependency reference."
       }
     },
     {
@@ -1911,7 +2384,7 @@
       "properties": {
         "display_name": "tinycss2",
         "version": "",
-        "summary": "Referenced as a dependency."
+        "summary": "Present only as a dependency reference."
       }
     },
     {
@@ -1922,7 +2395,7 @@
       "properties": {
         "display_name": "pycparser",
         "version": "",
-        "summary": "Referenced as a dependency."
+        "summary": "Present only as a dependency reference."
       }
     },
     {
@@ -1933,18 +2406,7 @@
       "properties": {
         "display_name": "traitlets",
         "version": "",
-        "summary": "Referenced as a dependency."
-      }
-    },
-    {
-      "id": "numpy",
-      "labels": [
-        "Module"
-      ],
-      "properties": {
-        "display_name": "numpy",
-        "version": "",
-        "summary": "Referenced as a dependency."
+        "summary": "Present only as a dependency reference."
       }
     },
     {
@@ -1955,7 +2417,7 @@
       "properties": {
         "display_name": "selenium",
         "version": "",
-        "summary": "Referenced as a dependency."
+        "summary": "Present only as a dependency reference."
       }
     },
     {
@@ -1966,18 +2428,7 @@
       "properties": {
         "display_name": "striprtf",
         "version": "",
-        "summary": "Referenced as a dependency."
-      }
-    },
-    {
-      "id": "pluggy",
-      "labels": [
-        "Module"
-      ],
-      "properties": {
-        "display_name": "pluggy",
-        "version": "",
-        "summary": "Referenced as a dependency."
+        "summary": "Present only as a dependency reference."
       }
     },
     {
@@ -1988,7 +2439,7 @@
       "properties": {
         "display_name": "pynacl",
         "version": "",
-        "summary": "Referenced as a dependency."
+        "summary": "Present only as a dependency reference."
       }
     },
     {
@@ -1999,7 +2450,7 @@
       "properties": {
         "display_name": "black",
         "version": "",
-        "summary": "Referenced as a dependency."
+        "summary": "Present only as a dependency reference."
       }
     },
     {
@@ -2010,7 +2461,7 @@
       "properties": {
         "display_name": "pyparsing",
         "version": "",
-        "summary": "Referenced as a dependency."
+        "summary": "Present only as a dependency reference."
       }
     },
     {
@@ -2021,7 +2472,7 @@
       "properties": {
         "display_name": "texture2ddecoder",
         "version": "",
-        "summary": "Referenced as a dependency."
+        "summary": "Present only as a dependency reference."
       }
     },
     {
@@ -2032,7 +2483,7 @@
       "properties": {
         "display_name": "rich",
         "version": "",
-        "summary": "Referenced as a dependency."
+        "summary": "Present only as a dependency reference."
       }
     },
     {
@@ -2043,7 +2494,7 @@
       "properties": {
         "display_name": "starlette",
         "version": "",
-        "summary": "Referenced as a dependency."
+        "summary": "Present only as a dependency reference."
       }
     },
     {
@@ -2054,7 +2505,7 @@
       "properties": {
         "display_name": "uvicorn",
         "version": "",
-        "summary": "Referenced as a dependency."
+        "summary": "Present only as a dependency reference."
       }
     },
     {
@@ -2065,7 +2516,7 @@
       "properties": {
         "display_name": "pyyaml",
         "version": "",
-        "summary": "Referenced as a dependency."
+        "summary": "Present only as a dependency reference."
       }
     },
     {
@@ -2076,7 +2527,7 @@
       "properties": {
         "display_name": "pydantic_settings",
         "version": "",
-        "summary": "Referenced as a dependency."
+        "summary": "Present only as a dependency reference."
       }
     },
     {
@@ -2087,7 +2538,7 @@
       "properties": {
         "display_name": "virtualenv",
         "version": "",
-        "summary": "Referenced as a dependency."
+        "summary": "Present only as a dependency reference."
       }
     },
     {
@@ -2098,7 +2549,7 @@
       "properties": {
         "display_name": "scipy",
         "version": "",
-        "summary": "Referenced as a dependency."
+        "summary": "Present only as a dependency reference."
       }
     },
     {
@@ -2109,18 +2560,7 @@
       "properties": {
         "display_name": "sympy",
         "version": "",
-        "summary": "Referenced as a dependency."
-      }
-    },
-    {
-      "id": "prompt_toolkit",
-      "labels": [
-        "Module"
-      ],
-      "properties": {
-        "display_name": "prompt_toolkit",
-        "version": "",
-        "summary": "Referenced as a dependency."
+        "summary": "Present only as a dependency reference."
       }
     },
     {
@@ -2131,7 +2571,7 @@
       "properties": {
         "display_name": "pygments",
         "version": "",
-        "summary": "Referenced as a dependency."
+        "summary": "Present only as a dependency reference."
       }
     },
     {
@@ -2142,7 +2582,7 @@
       "properties": {
         "display_name": "websockets",
         "version": "",
-        "summary": "Referenced as a dependency."
+        "summary": "Present only as a dependency reference."
       }
     },
     {
@@ -2153,95 +2593,7 @@
       "properties": {
         "display_name": "requests",
         "version": "",
-        "summary": "Referenced as a dependency."
-      }
-    },
-    {
-      "id": "wcwidth",
-      "labels": [
-        "Module"
-      ],
-      "properties": {
-        "display_name": "wcwidth",
-        "version": "",
-        "summary": "Referenced as a dependency."
-      }
-    },
-    {
-      "id": "zope_event",
-      "labels": [
-        "Module"
-      ],
-      "properties": {
-        "display_name": "zope_event",
-        "version": "",
-        "summary": "Referenced as a dependency."
-      }
-    },
-    {
-      "id": "zope_interface",
-      "labels": [
-        "Module"
-      ],
-      "properties": {
-        "display_name": "zope_interface",
-        "version": "",
-        "summary": "Referenced as a dependency."
-      }
-    },
-    {
-      "id": "pyasn1_modules",
-      "labels": [
-        "Module"
-      ],
-      "properties": {
-        "display_name": "pyasn1_modules",
-        "version": "",
-        "summary": "Referenced as a dependency."
-      }
-    },
-    {
-      "id": "pyopenssl",
-      "labels": [
-        "Module"
-      ],
-      "properties": {
-        "display_name": "pyopenssl",
-        "version": "",
-        "summary": "Referenced as a dependency."
-      }
-    },
-    {
-      "id": "urllib3",
-      "labels": [
-        "Module"
-      ],
-      "properties": {
-        "display_name": "urllib3",
-        "version": "",
-        "summary": "Referenced as a dependency."
-      }
-    },
-    {
-      "id": "tenacity",
-      "labels": [
-        "Module"
-      ],
-      "properties": {
-        "display_name": "tenacity",
-        "version": "",
-        "summary": "Referenced as a dependency."
-      }
-    },
-    {
-      "id": "protobuf",
-      "labels": [
-        "Module"
-      ],
-      "properties": {
-        "display_name": "protobuf",
-        "version": "",
-        "summary": "Referenced as a dependency."
+        "summary": "Present only as a dependency reference."
       }
     },
     {
@@ -2252,7 +2604,84 @@
       "properties": {
         "display_name": "tqdm",
         "version": "",
-        "summary": "Referenced as a dependency."
+        "summary": "Present only as a dependency reference."
+      }
+    },
+    {
+      "id": "wcwidth",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "wcwidth",
+        "version": "",
+        "summary": "Present only as a dependency reference."
+      }
+    },
+    {
+      "id": "zope_event",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "zope_event",
+        "version": "",
+        "summary": "Present only as a dependency reference."
+      }
+    },
+    {
+      "id": "zope_interface",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "zope_interface",
+        "version": "",
+        "summary": "Present only as a dependency reference."
+      }
+    },
+    {
+      "id": "pyasn1_modules",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "pyasn1_modules",
+        "version": "",
+        "summary": "Present only as a dependency reference."
+      }
+    },
+    {
+      "id": "pyopenssl",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "pyopenssl",
+        "version": "",
+        "summary": "Present only as a dependency reference."
+      }
+    },
+    {
+      "id": "urllib3",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "urllib3",
+        "version": "",
+        "summary": "Present only as a dependency reference."
+      }
+    },
+    {
+      "id": "tenacity",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "tenacity",
+        "version": "",
+        "summary": "Present only as a dependency reference."
       }
     },
     {
@@ -2263,7 +2692,7 @@
       "properties": {
         "display_name": "torch",
         "version": "",
-        "summary": "Referenced as a dependency."
+        "summary": "Present only as a dependency reference."
       }
     },
     {
@@ -2274,7 +2703,7 @@
       "properties": {
         "display_name": "safetensors",
         "version": "",
-        "summary": "Referenced as a dependency."
+        "summary": "Present only as a dependency reference."
       }
     },
     {
@@ -2285,7 +2714,7 @@
       "properties": {
         "display_name": "tensorflow",
         "version": "",
-        "summary": "Referenced as a dependency."
+        "summary": "Present only as a dependency reference."
       }
     },
     {
@@ -2296,18 +2725,7 @@
       "properties": {
         "display_name": "flake8",
         "version": "",
-        "summary": "Referenced as a dependency."
-      }
-    },
-    {
-      "id": "nest_asyncio",
-      "labels": [
-        "Module"
-      ],
-      "properties": {
-        "display_name": "nest_asyncio",
-        "version": "",
-        "summary": "Referenced as a dependency."
+        "summary": "Present only as a dependency reference."
       }
     },
     {
@@ -2318,7 +2736,7 @@
       "properties": {
         "display_name": "pyzmq",
         "version": "",
-        "summary": "Referenced as a dependency."
+        "summary": "Present only as a dependency reference."
       }
     },
     {
@@ -2329,7 +2747,7 @@
       "properties": {
         "display_name": "tornado",
         "version": "",
-        "summary": "Referenced as a dependency."
+        "summary": "Present only as a dependency reference."
       }
     },
     {
@@ -2340,7 +2758,7 @@
       "properties": {
         "display_name": "pyqt5",
         "version": "",
-        "summary": "Referenced as a dependency."
+        "summary": "Present only as a dependency reference."
       }
     },
     {
@@ -2351,7 +2769,7 @@
       "properties": {
         "display_name": "stack_data",
         "version": "",
-        "summary": "Referenced as a dependency."
+        "summary": "Present only as a dependency reference."
       }
     },
     {
@@ -2362,29 +2780,7 @@
       "properties": {
         "display_name": "widgetsnbextension",
         "version": "",
-        "summary": "Referenced as a dependency."
-      }
-    },
-    {
-      "id": "parso",
-      "labels": [
-        "Module"
-      ],
-      "properties": {
-        "display_name": "parso",
-        "version": "",
-        "summary": "Referenced as a dependency."
-      }
-    },
-    {
-      "id": "pip",
-      "labels": [
-        "Module"
-      ],
-      "properties": {
-        "display_name": "pip",
-        "version": "",
-        "summary": "Referenced as a dependency."
+        "summary": "Present only as a dependency reference."
       }
     },
     {
@@ -2395,7 +2791,7 @@
       "properties": {
         "display_name": "referencing",
         "version": "",
-        "summary": "Referenced as a dependency."
+        "summary": "Present only as a dependency reference."
       }
     },
     {
@@ -2406,7 +2802,7 @@
       "properties": {
         "display_name": "rpds_py",
         "version": "",
-        "summary": "Referenced as a dependency."
+        "summary": "Present only as a dependency reference."
       }
     },
     {
@@ -2417,7 +2813,7 @@
       "properties": {
         "display_name": "rfc3339_validator",
         "version": "",
-        "summary": "Referenced as a dependency."
+        "summary": "Present only as a dependency reference."
       }
     },
     {
@@ -2428,7 +2824,7 @@
       "properties": {
         "display_name": "uri_template",
         "version": "",
-        "summary": "Referenced as a dependency."
+        "summary": "Present only as a dependency reference."
       }
     },
     {
@@ -2439,7 +2835,7 @@
       "properties": {
         "display_name": "webcolors",
         "version": "",
-        "summary": "Referenced as a dependency."
+        "summary": "Present only as a dependency reference."
       }
     },
     {
@@ -2450,51 +2846,7 @@
       "properties": {
         "display_name": "rfc3986_validator",
         "version": "",
-        "summary": "Referenced as a dependency."
-      }
-    },
-    {
-      "id": "notebook",
-      "labels": [
-        "Module"
-      ],
-      "properties": {
-        "display_name": "notebook",
-        "version": "",
-        "summary": "Referenced as a dependency."
-      }
-    },
-    {
-      "id": "nbconvert",
-      "labels": [
-        "Module"
-      ],
-      "properties": {
-        "display_name": "nbconvert",
-        "version": "",
-        "summary": "Referenced as a dependency."
-      }
-    },
-    {
-      "id": "notebook_shim",
-      "labels": [
-        "Module"
-      ],
-      "properties": {
-        "display_name": "notebook_shim",
-        "version": "",
-        "summary": "Referenced as a dependency."
-      }
-    },
-    {
-      "id": "platformdirs",
-      "labels": [
-        "Module"
-      ],
-      "properties": {
-        "display_name": "platformdirs",
-        "version": "",
-        "summary": "Referenced as a dependency."
+        "summary": "Present only as a dependency reference."
       }
     },
     {
@@ -2505,40 +2857,7 @@
       "properties": {
         "display_name": "python_json_logger",
         "version": "",
-        "summary": "Referenced as a dependency."
-      }
-    },
-    {
-      "id": "nbformat",
-      "labels": [
-        "Module"
-      ],
-      "properties": {
-        "display_name": "nbformat",
-        "version": "",
-        "summary": "Referenced as a dependency."
-      }
-    },
-    {
-      "id": "overrides",
-      "labels": [
-        "Module"
-      ],
-      "properties": {
-        "display_name": "overrides",
-        "version": "",
-        "summary": "Referenced as a dependency."
-      }
-    },
-    {
-      "id": "prometheus_client",
-      "labels": [
-        "Module"
-      ],
-      "properties": {
-        "display_name": "prometheus_client",
-        "version": "",
-        "summary": "Referenced as a dependency."
+        "summary": "Present only as a dependency reference."
       }
     },
     {
@@ -2549,7 +2868,7 @@
       "properties": {
         "display_name": "pywinpty",
         "version": "",
-        "summary": "Referenced as a dependency."
+        "summary": "Present only as a dependency reference."
       }
     },
     {
@@ -2560,7 +2879,7 @@
       "properties": {
         "display_name": "send2trash",
         "version": "",
-        "summary": "Referenced as a dependency."
+        "summary": "Present only as a dependency reference."
       }
     },
     {
@@ -2571,7 +2890,7 @@
       "properties": {
         "display_name": "terminado",
         "version": "",
-        "summary": "Referenced as a dependency."
+        "summary": "Present only as a dependency reference."
       }
     },
     {
@@ -2582,40 +2901,7 @@
       "properties": {
         "display_name": "websocket_client",
         "version": "",
-        "summary": "Referenced as a dependency."
-      }
-    },
-    {
-      "id": "namex",
-      "labels": [
-        "Module"
-      ],
-      "properties": {
-        "display_name": "namex",
-        "version": "",
-        "summary": "Referenced as a dependency."
-      }
-    },
-    {
-      "id": "optree",
-      "labels": [
-        "Module"
-      ],
-      "properties": {
-        "display_name": "optree",
-        "version": "",
-        "summary": "Referenced as a dependency."
-      }
-    },
-    {
-      "id": "ml_dtypes",
-      "labels": [
-        "Module"
-      ],
-      "properties": {
-        "display_name": "ml_dtypes",
-        "version": "",
-        "summary": "Referenced as a dependency."
+        "summary": "Present only as a dependency reference."
       }
     },
     {
@@ -2626,7 +2912,7 @@
       "properties": {
         "display_name": "sortedcontainers",
         "version": "",
-        "summary": "Referenced as a dependency."
+        "summary": "Present only as a dependency reference."
       }
     },
     {
@@ -2637,7 +2923,7 @@
       "properties": {
         "display_name": "pygame",
         "version": "",
-        "summary": "Referenced as a dependency."
+        "summary": "Present only as a dependency reference."
       }
     },
     {
@@ -2648,7 +2934,7 @@
       "properties": {
         "display_name": "pycryptodomex",
         "version": "",
-        "summary": "Referenced as a dependency."
+        "summary": "Present only as a dependency reference."
       }
     },
     {
@@ -2659,7 +2945,7 @@
       "properties": {
         "display_name": "pysoundfile",
         "version": "",
-        "summary": "Referenced as a dependency."
+        "summary": "Present only as a dependency reference."
       }
     },
     {
@@ -2670,7 +2956,7 @@
       "properties": {
         "display_name": "sound_lib",
         "version": "",
-        "summary": "Referenced as a dependency."
+        "summary": "Present only as a dependency reference."
       }
     },
     {
@@ -2681,7 +2967,7 @@
       "properties": {
         "display_name": "versioneer",
         "version": "",
-        "summary": "Referenced as a dependency."
+        "summary": "Present only as a dependency reference."
       }
     },
     {
@@ -2692,29 +2978,7 @@
       "properties": {
         "display_name": "pypiwin32",
         "version": "",
-        "summary": "Referenced as a dependency."
-      }
-    },
-    {
-      "id": "openai",
-      "labels": [
-        "Module"
-      ],
-      "properties": {
-        "display_name": "openai",
-        "version": "",
-        "summary": "Referenced as a dependency."
-      }
-    },
-    {
-      "id": "pdftext",
-      "labels": [
-        "Module"
-      ],
-      "properties": {
-        "display_name": "pdftext",
-        "version": "",
-        "summary": "Referenced as a dependency."
+        "summary": "Present only as a dependency reference."
       }
     },
     {
@@ -2725,7 +2989,7 @@
       "properties": {
         "display_name": "python_dotenv",
         "version": "",
-        "summary": "Referenced as a dependency."
+        "summary": "Present only as a dependency reference."
       }
     },
     {
@@ -2736,7 +3000,7 @@
       "properties": {
         "display_name": "rapidfuzz",
         "version": "",
-        "summary": "Referenced as a dependency."
+        "summary": "Present only as a dependency reference."
       }
     },
     {
@@ -2747,7 +3011,95 @@
       "properties": {
         "display_name": "regex",
         "version": "",
-        "summary": "Referenced as a dependency."
+        "summary": "Present only as a dependency reference."
+      }
+    },
+    {
+      "id": "scikit_learn",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "scikit_learn",
+        "version": "",
+        "summary": "Present only as a dependency reference."
+      }
+    },
+    {
+      "id": "surya_ocr",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "surya_ocr",
+        "version": "",
+        "summary": "Present only as a dependency reference."
+      }
+    },
+    {
+      "id": "transformers",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "transformers",
+        "version": "",
+        "summary": "Present only as a dependency reference."
+      }
+    },
+    {
+      "id": "service_identity",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "service_identity",
+        "version": "",
+        "summary": "Present only as a dependency reference."
+      }
+    },
+    {
+      "id": "pyperclip",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "pyperclip",
+        "version": "",
+        "summary": "Present only as a dependency reference."
+      }
+    },
+    {
+      "id": "pycodestyle",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "pycodestyle",
+        "version": "",
+        "summary": "Present only as a dependency reference."
+      }
+    },
+    {
+      "id": "pypdfium2",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "pypdfium2",
+        "version": "",
+        "summary": "Present only as a dependency reference."
+      }
+    },
+    {
+      "id": "wmi",
+      "labels": [
+        "Module"
+      ],
+      "properties": {
+        "display_name": "wmi",
+        "version": "",
+        "summary": "Present only as a dependency reference."
       }
     }
   ],
@@ -3696,6 +4048,12 @@
     },
     {
       "type": "REQUIRES",
+      "source": "fsspec",
+      "target": "tqdm",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
       "source": "ftfy",
       "target": "wcwidth",
       "properties": {}
@@ -4104,6 +4462,24 @@
     },
     {
       "type": "REQUIRES",
+      "source": "huggingface_hub",
+      "target": "jedi",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "huggingface_hub",
+      "target": "jinja2",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "huggingface_hub",
+      "target": "pytest",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
       "source": "idna",
       "target": "pytest",
       "properties": {}
@@ -4212,6 +4588,12 @@
     },
     {
       "type": "REQUIRES",
+      "source": "ipykernel",
+      "target": "pytest",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
       "source": "ipython",
       "target": "colorama",
       "properties": {}
@@ -4316,6 +4698,36 @@
       "type": "REQUIRES",
       "source": "ipython",
       "target": "packaging",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "ipython",
+      "target": "nbformat",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "ipython",
+      "target": "nbclient",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "ipython",
+      "target": "numpy",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "ipython",
+      "target": "pandas",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "ipython",
+      "target": "trio",
       "properties": {}
     },
     {
@@ -4478,6 +4890,24 @@
       "type": "REQUIRES",
       "source": "jedi",
       "target": "flake8",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "jedi",
+      "target": "attrs",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "jedi",
+      "target": "colorama",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "jedi",
+      "target": "pytest",
       "properties": {}
     },
     {
@@ -4700,6 +5130,42 @@
       "type": "REQUIRES",
       "source": "jupyterlab",
       "target": "pytest",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "jupyterlab",
+      "target": "ipython",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "jupyterlab",
+      "target": "ipywidgets",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "jupyterlab",
+      "target": "matplotlib",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "jupyterlab",
+      "target": "nbconvert",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "jupyterlab",
+      "target": "pandas",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "jupyterlab",
+      "target": "scipy",
       "properties": {}
     },
     {
@@ -5096,6 +5562,18 @@
       "type": "REQUIRES",
       "source": "jupyter_server",
       "target": "ipykernel",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "jupyter_server",
+      "target": "typing_extensions",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "jupyter_server",
+      "target": "pre_commit",
       "properties": {}
     },
     {
@@ -5582,6 +6060,876 @@
       "type": "REQUIRES",
       "source": "mistune",
       "target": "typing_extensions",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "ml_dtypes",
+      "target": "numpy",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "ml_dtypes",
+      "target": "absl_py",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "ml_dtypes",
+      "target": "pytest",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "mouseinfo",
+      "target": "pyperclip",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "mouseinfo",
+      "target": "pillow",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "mpmath",
+      "target": "pytest",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "mpmath",
+      "target": "pycodestyle",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "mpmath",
+      "target": "wheel",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "mss",
+      "target": "numpy",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "mss",
+      "target": "pillow",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "mss",
+      "target": "pytest",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "multidict",
+      "target": "typing_extensions",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "naked",
+      "target": "requests",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "naked",
+      "target": "pyyaml",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "nbclient",
+      "target": "jupyter_client",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "nbclient",
+      "target": "jupyter_core",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "nbclient",
+      "target": "nbformat",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "nbclient",
+      "target": "traitlets",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "nbclient",
+      "target": "pre_commit",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "nbclient",
+      "target": "ipykernel",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "nbclient",
+      "target": "ipython",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "nbclient",
+      "target": "ipywidgets",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "nbclient",
+      "target": "nbconvert",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "nbclient",
+      "target": "pytest",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "nbconvert",
+      "target": "beautifulsoup4",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "nbconvert",
+      "target": "bleach",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "nbconvert",
+      "target": "defusedxml",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "nbconvert",
+      "target": "jinja2",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "nbconvert",
+      "target": "jupyter_core",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "nbconvert",
+      "target": "jupyterlab_pygments",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "nbconvert",
+      "target": "markupsafe",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "nbconvert",
+      "target": "mistune",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "nbconvert",
+      "target": "nbclient",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "nbconvert",
+      "target": "nbformat",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "nbconvert",
+      "target": "packaging",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "nbconvert",
+      "target": "pandocfilters",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "nbconvert",
+      "target": "pygments",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "nbconvert",
+      "target": "traitlets",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "nbconvert",
+      "target": "ipykernel",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "nbconvert",
+      "target": "ipython",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "nbconvert",
+      "target": "ipywidgets",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "nbconvert",
+      "target": "pytest",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "nbconvert",
+      "target": "tornado",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "nbformat",
+      "target": "fastjsonschema",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "nbformat",
+      "target": "jsonschema",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "nbformat",
+      "target": "jupyter_core",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "nbformat",
+      "target": "traitlets",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "nbformat",
+      "target": "pre_commit",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "nbformat",
+      "target": "pytest",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "neo4j",
+      "target": "pytz",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "neo4j",
+      "target": "numpy",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "neo4j",
+      "target": "pandas",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "networkx",
+      "target": "numpy",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "networkx",
+      "target": "scipy",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "networkx",
+      "target": "matplotlib",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "networkx",
+      "target": "pandas",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "networkx",
+      "target": "pre_commit",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "networkx",
+      "target": "pillow",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "networkx",
+      "target": "scikit_learn",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "networkx",
+      "target": "lxml",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "networkx",
+      "target": "sympy",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "networkx",
+      "target": "pytest",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "notebook",
+      "target": "jupyter_server",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "notebook",
+      "target": "jupyterlab_server",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "notebook",
+      "target": "jupyterlab",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "notebook",
+      "target": "notebook_shim",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "notebook",
+      "target": "tornado",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "notebook",
+      "target": "pre_commit",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "notebook",
+      "target": "ipykernel",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "notebook",
+      "target": "pytest",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "notebook",
+      "target": "requests",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "notebook_shim",
+      "target": "jupyter_server",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "notebook_shim",
+      "target": "pytest",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "openai",
+      "target": "anyio",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "openai",
+      "target": "distro",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "openai",
+      "target": "httpx",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "openai",
+      "target": "jiter",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "openai",
+      "target": "pydantic",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "openai",
+      "target": "sniffio",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "openai",
+      "target": "tqdm",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "openai",
+      "target": "typing_extensions",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "openai",
+      "target": "aiohttp",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "openai",
+      "target": "numpy",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "openai",
+      "target": "pandas",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "openai",
+      "target": "websockets",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "opencv_python_headless",
+      "target": "numpy",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "optree",
+      "target": "typing_extensions",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "optree",
+      "target": "numpy",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "optree",
+      "target": "torch",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "optree",
+      "target": "pre_commit",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "optree",
+      "target": "pytest",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "optree",
+      "target": "rich",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "optree",
+      "target": "docutils",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "outcome",
+      "target": "attrs",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "pandas",
+      "target": "numpy",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "pandas",
+      "target": "python_dateutil",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "pandas",
+      "target": "pytz",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "pandas",
+      "target": "tzdata",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "pandas",
+      "target": "pytest",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "pandas",
+      "target": "scipy",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "pandas",
+      "target": "fsspec",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "pandas",
+      "target": "beautifulsoup4",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "pandas",
+      "target": "html5lib",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "pandas",
+      "target": "lxml",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "parso",
+      "target": "flake8",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "parso",
+      "target": "pytest",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "pdftext",
+      "target": "click",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "pdftext",
+      "target": "pydantic",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "pdftext",
+      "target": "pydantic_settings",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "pdftext",
+      "target": "pypdfium2",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "pillow",
+      "target": "defusedxml",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "pillow",
+      "target": "markdown2",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "pillow",
+      "target": "packaging",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "pillow",
+      "target": "pytest",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "pillow",
+      "target": "typing_extensions",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "pipenv",
+      "target": "certifi",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "pipenv",
+      "target": "packaging",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "pipenv",
+      "target": "setuptools",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "pipenv",
+      "target": "virtualenv",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "pipenv",
+      "target": "beautifulsoup4",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "pipenv",
+      "target": "black",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "pipenv",
+      "target": "flake8",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "pipenv",
+      "target": "pytest",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "platformdirs",
+      "target": "pytest",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "platform_utils",
+      "target": "platformdirs",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "platform_utils",
+      "target": "pywin32",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "pluggy",
+      "target": "pre_commit",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "pluggy",
+      "target": "pytest",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "plyer",
+      "target": "flake8",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "pre_commit",
+      "target": "cfgv",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "pre_commit",
+      "target": "identify",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "pre_commit",
+      "target": "nodeenv",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "pre_commit",
+      "target": "pyyaml",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "pre_commit",
+      "target": "virtualenv",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "prompt_toolkit",
+      "target": "wcwidth",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "psutil",
+      "target": "pytest",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "psutil",
+      "target": "setuptools",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "psutil",
+      "target": "pywin32",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "psutil",
+      "target": "wheel",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "psutil",
+      "target": "wmi",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "psutil",
+      "target": "black",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "psutil",
+      "target": "packaging",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "psutil",
+      "target": "requests",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "psutil",
+      "target": "virtualenv",
+      "properties": {}
+    },
+    {
+      "type": "REQUIRES",
+      "source": "pure_eval",
+      "target": "pytest",
       "properties": {}
     }
   ]

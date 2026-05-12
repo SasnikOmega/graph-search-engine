@@ -2,7 +2,6 @@
 
 from __future__ import annotations
 
-import json
 from typing import Any
 
 import networkx as nx
@@ -14,32 +13,78 @@ from gui import a11y
 
 
 class GraphPreviewFrame(wx.Frame):
-    """Separate window showing a simple force-directed layout of the graph."""
+    """Separate window: optional summary strip, or full-screen plot only."""
 
     MAX_NODES = 500
 
-    def __init__(self, parent: wx.Window | None, title: str, export_data: dict[str, Any]) -> None:
-        super().__init__(parent, title=title, size=(960, 720), style=wx.DEFAULT_FRAME_STYLE)
+    def __init__(
+        self,
+        parent: wx.Window | None,
+        title: str,
+        export_data: dict[str, Any],
+        *,
+        minimal: bool = False,
+    ) -> None:
+        self._minimal = minimal
+        if minimal:
+            super().__init__(parent, title="Graph", size=(960, 720), style=wx.DEFAULT_FRAME_STYLE)
+        else:
+            super().__init__(parent, title=title, size=(960, 720), style=wx.DEFAULT_FRAME_STYLE)
+
         panel = wx.Panel(self)
         root = wx.BoxSizer(wx.VERTICAL)
 
-        info = wx.StaticText(panel, label="")
-        a11y.announce(
-            info,
-            "Graph summary",
-            "Summary of how many nodes and edges are shown.",
-        )
-        root.Add(info, 0, wx.EXPAND | wx.ALL, 6)
+        self._info: wx.StaticText | None = None
+        if not minimal:
+            self._info = wx.StaticText(panel, label="")
+            a11y.announce(
+                self._info,
+                "Graph summary",
+                "Summary of how many nodes and edges are shown.",
+            )
+            root.Add(self._info, 0, wx.EXPAND | wx.ALL, 6)
 
         self.figure = Figure(figsize=(7, 6), dpi=100)
         self.canvas = FigureCanvas(panel, wx.ID_ANY, self.figure)
-        a11y.announce(self.canvas, "Graph drawing area", "Visual layout of nodes and directed edges.")
+        a11y.announce(
+            self.canvas,
+            "Graph drawing area",
+            "Visual layout of nodes and directed edges. Press Escape to close this window.",
+        )
         root.Add(self.canvas, 1, wx.EXPAND | wx.ALL, 4)
 
         panel.SetSizer(root)
-        self._build_graph(info, export_data)
+        self._build_graph(export_data)
 
-    def _build_graph(self, info: wx.StaticText, data: dict[str, Any]) -> None:
+        self.canvas.SetFocus()
+        self.Bind(wx.EVT_CHAR_HOOK, self._on_char_hook)
+        if minimal:
+            self.Bind(wx.EVT_CLOSE, self._on_close_minimal)
+            wx.CallAfter(self._enter_fullscreen)
+
+    def _enter_fullscreen(self) -> None:
+        try:
+            self.ShowFullScreen(
+                True,
+                wx.FULLSCREEN_NOSTATUSBAR
+                | wx.FULLSCREEN_NOTOOLBAR
+                | wx.FULLSCREEN_NOBORDER,
+            )
+        except Exception:
+            self.Maximize(True)
+
+    def _on_close_minimal(self, evt: wx.CloseEvent) -> None:
+        if self.IsFullScreen():
+            self.ShowFullScreen(False)
+        evt.Skip()
+
+    def _on_char_hook(self, evt: wx.KeyEvent) -> None:
+        if evt.GetKeyCode() == wx.WXK_ESCAPE:
+            self.Close()
+            return
+        evt.Skip()
+
+    def _build_graph(self, data: dict[str, Any]) -> None:
         nodes = data.get("nodes") or []
         edges = data.get("edges") or []
         n = len(nodes)
@@ -53,11 +98,12 @@ class GraphPreviewFrame(wx.Frame):
                 for e in edges
                 if str(e.get("source")) in shown_ids and str(e.get("target")) in shown_ids
             ]
-            info.SetLabel(
-                f"Showing first {self.MAX_NODES} of {n} nodes (and matching edges) for performance."
-            )
+            msg = f"Showing first {self.MAX_NODES} of {n} nodes (and matching edges) for performance."
         else:
-            info.SetLabel(f"{n} nodes, {len(edges)} edges.")
+            msg = f"{n} nodes, {len(edges)} edges."
+
+        if self._info is not None:
+            self._info.SetLabel(msg)
 
         G = nx.DiGraph()
         for node in nodes:
@@ -94,7 +140,7 @@ class GraphPreviewFrame(wx.Frame):
             width=1.0,
             edge_color="#333333",
         )
-        labels = {nid: data.get("label", nid) for nid, data in G.nodes(data=True)}
+        labels = {nid: d.get("label", nid) for nid, d in G.nodes(data=True)}
         nx.draw_networkx_labels(G, pos, labels=labels, font_size=8, ax=ax)
         edge_labels = {(u, v): d.get("label", "") for u, v, d in G.edges(data=True)}
         nx.draw_networkx_edge_labels(G, pos, edge_labels=edge_labels, font_size=6, ax=ax)

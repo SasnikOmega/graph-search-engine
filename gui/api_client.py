@@ -165,3 +165,31 @@ class ApiClient:
 
     def graph_export(self) -> dict[str, Any]:
         return self._request("GET", "/graph/export").json()
+
+    def graph_import_json(self, document: dict[str, Any], *, mode: str) -> dict[str, Any]:
+        return self._request(
+            "POST",
+            "/graph/import",
+            params={"mode": mode},
+            json=document,
+        ).json()
+
+    def graph_import_graphml(self, xml_text: str, *, mode: str) -> dict[str, Any]:
+        body = xml_text.encode("utf-8")
+        return self._request(
+            "POST",
+            "/graph/import/graphml",
+            params={"mode": mode},
+            content=body,
+            headers={"Content-Type": "application/xml; charset=utf-8"},
+        ).json()
+
+    def graph_export_bytes(self, fmt: str) -> bytes:
+        fmt = fmt.lower().lstrip(".")
+        if fmt == "json":
+            return self._request("GET", "/graph/export").content
+        if fmt == "graphml":
+            return self._request("GET", "/graph/export/graphml").content
+        if fmt == "gexf":
+            return self._request("GET", "/graph/export/gexf").content
+        raise ApiError(f"Unsupported export format: {fmt!r}. Use json, graphml, or gexf.")

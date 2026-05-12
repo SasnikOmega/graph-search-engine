@@ -1,6 +1,6 @@
 # Graph engine
 
-Course project: a **Neo4j** graph store behind a **FastAPI** REST API (node and relationship CRUD, search, JSON/GraphML import) and a small **wxPython** desktop client.
+Course project: a **Neo4j** graph store behind a **FastAPI** REST API (node and relationship CRUD, search, JSON/GraphML import and export) and a **wxPython** desktop client.
 
 ## Requirements
 
@@ -23,17 +23,19 @@ pip install -r requirements.txt -r requirements-gui.txt
 python -m gui
 ```
 
-Connection settings are saved under `%USERPROFILE%\.graph_engine_gui.json` (Linux/macOS: `$HOME/.graph_engine_gui.json`).
+The **Graph** menu supports importing `.json` / `.graphml` files and exporting to `.json`, `.graphml`, or `.gexf`, with a short result dialog after import. Two plot modes: a normal window with a summary line, or a **minimal fullscreen** view (Escape closes).
+
+Connection settings: `%USERPROFILE%\.graph_engine_gui.json` (Linux/macOS: `$HOME/.graph_engine_gui.json`).
 
 ## Example dataset
 
-Pre-built **pip dependency** graph (modules as `:Module`, edges `REQUIRES`): see `examples/README.md` and `examples/pip_dependency_graph.json`. Import:
+Pre-built pip dependency graph: `examples/README.md` and `examples/pip_dependency_graph.json`.
 
 ```bash
 curl -s -X POST "http://127.0.0.1:8000/graph/import?mode=replace" -H "Content-Type: application/json" -d @examples/pip_dependency_graph.json
 ```
 
-Regenerate from the current Python environment:
+Regenerate:
 
 ```bash
 python scripts/build_pip_graph.py -o examples/pip_dependency_graph.json

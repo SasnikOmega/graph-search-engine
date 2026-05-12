@@ -17,6 +17,14 @@ curl -s -X POST "http://127.0.0.1:8000/graph/import?mode=replace" ^
   -d @examples/pip_dependency_graph.json
 ```
 
+### Export the same snapshot
+
+```bash
+curl -s -o graph.json "http://127.0.0.1:8000/graph/export"
+curl -s -o graph.graphml "http://127.0.0.1:8000/graph/export/graphml"
+curl -s -o graph.gexf "http://127.0.0.1:8000/graph/export/gexf"
+```
+
 ### Example Cypher (most depended-on modules)
 
 ```cypher

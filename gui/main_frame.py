@@ -5,6 +5,7 @@ from __future__ import annotations
 import json
 import threading
 import webbrowser
+from pathlib import Path
 from typing import Any, Callable
 
 import wx
@@ -61,7 +62,11 @@ class MainFrame(wx.Frame):
         bar.Append(db_m, "&Database")
 
         graph_m = wx.Menu()
-        mi_graph = graph_m.Append(wx.ID_ANY, "&Visualize graph…")
+        mi_graph_sum = graph_m.Append(wx.ID_ANY, "Visualize graph (&with summary)…")
+        mi_graph_min = graph_m.Append(wx.ID_ANY, "Visualize graph (&minimal fullscreen)…")
+        graph_m.AppendSeparator()
+        mi_imp = graph_m.Append(wx.ID_ANY, "&Import graph from file…")
+        mi_exp = graph_m.Append(wx.ID_ANY, "&Export graph to file…")
         bar.Append(graph_m, "&Graph")
 
         help_m = wx.Menu()
@@ -74,7 +79,10 @@ class MainFrame(wx.Frame):
         self.Bind(wx.EVT_MENU, lambda e: self.Close(), mi_exit)
         self.Bind(wx.EVT_MENU, self._on_manage_db, mi_db)
         self.Bind(wx.EVT_MENU, self._on_refresh_all, mi_refresh)
-        self.Bind(wx.EVT_MENU, self._on_visualize, mi_graph)
+        self.Bind(wx.EVT_MENU, lambda e: self._start_visualize(False), mi_graph_sum)
+        self.Bind(wx.EVT_MENU, lambda e: self._start_visualize(True), mi_graph_min)
+        self.Bind(wx.EVT_MENU, self._on_import_graph_file, mi_imp)
+        self.Bind(wx.EVT_MENU, self._on_export_graph_file, mi_exp)
         self.Bind(wx.EVT_MENU, self._on_open_docs, mi_docs)
         self.Bind(wx.EVT_MENU, self._on_about, mi_about)
 
@@ -288,12 +296,159 @@ class MainFrame(wx.Frame):
     def _on_health(self, _: wx.CommandEvent | None) -> None:
         self._async(lambda: self._client.health(), self._apply_health, "Health check failed")
 
-    def _on_visualize(self, _: wx.CommandEvent | None) -> None:
+    def _start_visualize(self, minimal: bool) -> None:
+        def loaded(data: dict[str, Any]) -> None:
+            self._open_graph_window(data, minimal=minimal)
+
         self._async(
             lambda: self._client.graph_export(),
-            self._open_graph_window,
+            loaded,
             "Could not export graph",
         )
+
+    def _open_graph_window(
+        self,
+        data: dict[str, Any],
+        *,
+        minimal: bool = False,
+    ) -> None:
+        title = "Graph" if minimal else "Graph visualization"
+        win = GraphPreviewFrame(self, title, data, minimal=minimal)
+        win.Show()
+
+    def _show_import_ok(self, stats: dict[str, Any]) -> None:
+        n = stats.get("nodes_created", "?")
+        m = stats.get("edges_created", "?")
+        dlg = wx.MessageDialog(
+            self,
+            f"Nodes processed: {n}\nEdges processed: {m}",
+            "Import succeeded",
+            wx.OK | wx.ICON_INFORMATION,
+        )
+        dlg.ShowModal()
+        dlg.Destroy()
+
+    def _show_import_failed(self, err: Exception) -> None:
+        dlg = wx.MessageDialog(
+            self,
+            str(err) or err.__class__.__name__,
+            "Import failed",
+            wx.OK | wx.ICON_ERROR,
+        )
+        body = getattr(err, "body", None)
+        if body:
+            dlg.SetExtendedMessage(str(body)[:4000])
+        dlg.ShowModal()
+        dlg.Destroy()
+
+    def _on_import_graph_file(self, _: wx.CommandEvent) -> None:
+        fd = wx.FileDialog(
+            self,
+            "Import graph file",
+            wildcard="JSON graph (*.json)|*.json|GraphML (*.graphml;*.xml)|*.graphml;*.xml|All files (*.*)|*.*",
+            style=wx.FD_OPEN | wx.FD_FILE_MUST_EXIST,
+        )
+        if fd.ShowModal() != wx.ID_OK:
+            fd.Destroy()
+            return
+        path = Path(fd.GetPath())
+        fd.Destroy()
+
+        mode_dlg = wx.SingleChoiceDialog(
+            self,
+            "Choose how the imported data is merged into the active database.",
+            "Import mode",
+            [
+                "Append: keep existing nodes and relationships, add new ones",
+                "Replace: delete all nodes and relationships in this database, then import",
+            ],
+            0,
+        )
+        if mode_dlg.ShowModal() != wx.ID_OK:
+            mode_dlg.Destroy()
+            return
+        mode = "replace" if mode_dlg.GetSelection() == 1 else "append"
+        mode_dlg.Destroy()
+
+        def worker() -> tuple[dict[str, Any] | None, Exception | None]:
+            try:
+                ext = path.suffix.lower()
+                if ext == ".json":
+                    doc = json.loads(path.read_text(encoding="utf-8"))
+                    if not isinstance(doc, dict) or "nodes" not in doc or "edges" not in doc:
+                        return None, ValueError("JSON must be an object with 'nodes' and 'edges' arrays.")
+                    return self._client.graph_import_json(doc, mode=mode), None
+                if ext in (".graphml", ".xml"):
+                    xml = path.read_text(encoding="utf-8")
+                    return self._client.graph_import_graphml(xml, mode=mode), None
+                return None, ValueError("Unsupported file type. Use .json or .graphml (or .xml GraphML).")
+            except Exception as e:
+                return None, e
+
+        def done(pack: tuple[dict[str, Any] | None, Exception | None]) -> None:
+            stats, err = pack
+            if err is not None:
+                self._show_import_failed(err)
+                return
+            if stats is not None:
+                self._show_import_ok(stats)
+            self._on_refresh_all(None)
+
+        self._async(worker, done, "Import failed")
+
+    def _on_export_graph_file(self, _: wx.CommandEvent) -> None:
+        fd = wx.FileDialog(
+            self,
+            "Export graph to file",
+            wildcard="JSON (*.json)|*.json|GraphML (*.graphml)|*.graphml|GEXF (*.gexf)|*.gexf",
+            style=wx.FD_SAVE | wx.FD_OVERWRITE_PROMPT,
+        )
+        if fd.ShowModal() != wx.ID_OK:
+            fd.Destroy()
+            return
+        out_path = Path(fd.GetPath())
+        fd.Destroy()
+
+        name = out_path.name.lower()
+        if name.endswith(".json"):
+            fmt = "json"
+        elif name.endswith(".graphml"):
+            fmt = "graphml"
+        elif name.endswith(".gexf"):
+            fmt = "gexf"
+        else:
+            wx.MessageBox(
+                "The file name must end with .json, .graphml, or .gexf.",
+                "Export",
+                wx.OK | wx.ICON_INFORMATION,
+                self,
+            )
+            return
+
+        def worker() -> tuple[bytes, Exception | None]:
+            try:
+                return self._client.graph_export_bytes(fmt), None
+            except Exception as e:
+                return b"", e
+
+        def done(pack: tuple[bytes, Exception | None]) -> None:
+            blob, err = pack
+            if err is not None:
+                self._show_import_failed(err)
+                return
+            try:
+                out_path.write_bytes(blob)
+            except OSError as e:
+                self._show_import_failed(e)
+                return
+            wx.MessageBox(
+                f"Graph saved to:\n{out_path}",
+                "Export succeeded",
+                wx.OK | wx.ICON_INFORMATION,
+                self,
+            )
+
+        self._async(worker, done, "Export failed")
 
     def _on_open_docs(self, _: wx.CommandEvent) -> None:
         url = self._base_url.rstrip("/") + "/docs"
@@ -524,7 +679,3 @@ class MainFrame(wx.Frame):
 
     def _apply_health(self, data: dict[str, Any]) -> None:
         self._health_text.SetValue(json.dumps(data, indent=2))
-
-    def _open_graph_window(self, data: dict[str, Any]) -> None:
-        win = GraphPreviewFrame(self, "Graph visualization", data)
-        win.Show()
