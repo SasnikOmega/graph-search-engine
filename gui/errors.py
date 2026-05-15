@@ -13,10 +13,10 @@ def show_error(parent: wx.Window | None, title: str, err: BaseException) -> None
     msg = (str(err) or "").strip() or err.__class__.__name__
     tb = "".join(traceback.format_exception(type(err), err, err.__traceback__))
     if len(tb) > 3500:
-        tb = tb[:3500] + "\n… (traceback truncated)"
+        tb = tb[:3500] + "\n… (трассировка обрезана)"
     dlg = wx.MessageDialog(
         parent,
-        f"{msg}\n\nSee extended information for technical details.",
+        f"{msg}\n\nПодробности — в расширенном сообщении.",
         title,
         wx.OK | wx.ICON_ERROR,
     )
@@ -45,8 +45,8 @@ def install_global_excepthook() -> None:
 def _show_uncaught(text: str, stack: str) -> None:
     dlg = wx.MessageDialog(
         None,
-        f"{text}\n\nSee extended information for the traceback.",
-        "Unexpected error",
+        f"{text}\n\nПодробности — в расширенном сообщении.",
+        "Непредвиденная ошибка",
         wx.OK | wx.ICON_ERROR,
     )
     dlg.SetExtendedMessage(stack[-4000:])

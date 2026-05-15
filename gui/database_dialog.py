@@ -15,38 +15,37 @@ class CreateDatabaseDialog(wx.Dialog):
     def __init__(self, parent: wx.Window) -> None:
         super().__init__(
             parent,
-            title="Create new database",
+            title="Создать базу данных",
             style=wx.DEFAULT_DIALOG_STYLE,
         )
         self._name = wx.TextCtrl(self, value="")
-        self._wait = wx.CheckBox(self, label="Wait until the database is ready")
-        self._wait.SetValue(True)
+        self._wait = wx.CheckBox(self, label="Дождаться готовности базы")
 
         sz = wx.BoxSizer(wx.VERTICAL)
         a11y.stack_labeled_control(
             self,
             sz,
-            caption="New database name (edit field below)",
+            caption="Имя новой базы (поле ввода ниже)",
             body=(
-                "Letters, digits, underscore, or hyphen; must start with a letter. "
-                "Creating extra databases may require a suitable Neo4j edition."
+                "Буквы, цифры, подчёркивание или дефис; первый символ — буква. "
+                "Создание нескольких баз может зависеть от редакции Neo4j."
             ),
             control=self._name,
         )
         wait_cap = wx.StaticText(
             self,
-            label="Wait for database to finish starting (check box below)",
+            label="Дождаться запуска базы (флажок ниже)",
         )
-        wait_cap.SetName("Wait for database to finish starting (heading)")
+        wait_cap.SetName("Дождаться запуска базы (заголовок)")
         wait_cap.SetHelpText(
-            "When checked, the server waits for Neo4j to finish creating the database before returning."
+            "Если отмечено, сервер дождётся окончания создания базы перед ответом."
         )
         sz.Add(wait_cap, 0, wx.LEFT | wx.RIGHT | wx.TOP, 8)
         sz.Add(self._wait, 0, wx.LEFT | wx.RIGHT | wx.BOTTOM, 8)
         a11y.announce(
             self._wait,
-            "Wait for database to finish starting. When checked, the server waits for Neo4j.",
-            "Maps to the wait flag on the create-database API call.",
+            "Дождаться запуска базы. При включении сервер ждёт готовности Neo4j.",
+            "Параметр wait при создании базы.",
         )
         sz.Add(self.CreateSeparatedButtonSizer(wx.OK | wx.CANCEL), 0, wx.EXPAND | wx.ALL, 8)
         self.SetSizerAndFit(sz)
@@ -65,7 +64,7 @@ class DatabaseManagerDialog(wx.Dialog):
     def __init__(self, parent: wx.Window, client: ApiClient) -> None:
         super().__init__(
             parent,
-            title="Databases on server",
+            title="Базы данных на сервере",
             size=(640, 420),
             style=wx.DEFAULT_DIALOG_STYLE | wx.RESIZE_BORDER,
         )
@@ -78,31 +77,31 @@ class DatabaseManagerDialog(wx.Dialog):
         )
         a11y.announce(
             self._list,
-            "Databases returned by the server (table below). Columns: name, status, default, type, address.",
-            "Select one row, then use Use selected as active database.",
+            "Список баз с сервера (таблица ниже). Столбцы: имя, статус, по умолчанию, тип, адрес.",
+            "Выберите строку, затем «Сделать выбранную активной».",
         )
         for i, (title, w) in enumerate(
             [
-                ("Name", 160),
-                ("Current status", 140),
-                ("Default", 80),
-                ("Type", 100),
-                ("Address", 180),
+                ("Имя", 160),
+                ("Статус", 140),
+                ("По умолч.", 80),
+                ("Тип", 100),
+                ("Адрес", 180),
             ]
         ):
             self._list.InsertColumn(i, title, width=w)
 
-        btn_refresh = wx.Button(self, label="&Refresh list")
-        a11y.announce(btn_refresh, "Refresh database list", "Reload databases from the server.")
-        btn_create = wx.Button(self, label="&Create new database…")
-        a11y.announce(btn_create, "Create new database", "Opens a dialog to define a new database.")
-        btn_use = wx.Button(self, label="&Use selected as active database")
+        btn_refresh = wx.Button(self, label="&Обновить список")
+        a11y.announce(btn_refresh, "Обновить список баз", "Загрузить список с сервера.")
+        btn_create = wx.Button(self, label="&Создать базу…")
+        a11y.announce(btn_create, "Создать базу", "Открыть диалог создания новой базы.")
+        btn_use = wx.Button(self, label="&Сделать выбранную активной")
         a11y.announce(
             btn_use,
-            "Use selected as active database",
-            "Sets the active database for browsing nodes and relationships.",
+            "Сделать выбранную базу активной",
+            "Все операции с вершинами и связями пойдут в эту базу.",
         )
-        btn_close = wx.Button(self, wx.ID_CLOSE, label="&Close")
+        btn_close = wx.Button(self, wx.ID_CLOSE, label="&Закрыть")
 
         btn_row = wx.BoxSizer(wx.HORIZONTAL)
         for b in (btn_refresh, btn_create, btn_use, btn_close):
@@ -111,11 +110,11 @@ class DatabaseManagerDialog(wx.Dialog):
         root = wx.BoxSizer(wx.VERTICAL)
         list_intro = wx.StaticText(
             self,
-            label="Databases returned by the server (read-only table below)",
+            label="Базы данных на сервере (таблица только для чтения ниже)",
         )
-        list_intro.SetName("Databases table introduction")
+        list_intro.SetName("Введение к таблице баз")
         list_intro.SetHelpText(
-            "Each row is one database. Select a row before using Use selected as active database."
+            "Каждая строка — одна база. Сначала выберите строку, затем «Сделать выбранную активной»."
         )
         root.Add(list_intro, 0, wx.LEFT | wx.RIGHT | wx.TOP, 8)
         root.Add(self._list, 1, wx.EXPAND | wx.ALL, 8)
@@ -133,7 +132,7 @@ class DatabaseManagerDialog(wx.Dialog):
         try:
             rows = self._client.list_databases()
         except ApiError as e:
-            show_error(self, "Could not list databases", e)
+            show_error(self, "Не удалось получить список баз", e)
             return
         self._list.DeleteAllItems()
         for r in rows:
@@ -157,16 +156,16 @@ class DatabaseManagerDialog(wx.Dialog):
         wait = dlg.get_wait()
         dlg.Destroy()
         if not name:
-            wx.MessageBox("Enter a database name.", "Validation", wx.OK | wx.ICON_INFORMATION, self)
+            wx.MessageBox("Введите имя базы.", "Проверка данных", wx.OK | wx.ICON_INFORMATION, self)
             return
         try:
             self._client.create_database(name, wait=wait)
         except ApiError as e:
-            show_error(self, "Could not create database", e)
+            show_error(self, "Не удалось создать базу", e)
             return
         wx.MessageBox(
-            f"Database {name!r} was created or already existed.",
-            "Success",
+            f"База {name!r} создана или уже существовала.",
+            "Готово",
             wx.OK | wx.ICON_INFORMATION,
             self,
         )
@@ -175,7 +174,11 @@ class DatabaseManagerDialog(wx.Dialog):
     def _on_use(self, _: wx.CommandEvent) -> None:
         idx = self._list.GetFirstSelected()
         if idx == -1:
-            wx.MessageBox("Select a database in the list first.", "Nothing selected", wx.OK | wx.ICON_INFORMATION)
+            wx.MessageBox(
+                "Сначала выберите базу в списке.",
+                "Ничего не выбрано",
+                wx.OK | wx.ICON_INFORMATION,
+            )
             return
         self._selected_name = self._list.GetItemText(idx, 0)
         self.EndModal(wx.ID_OK)

@@ -52,6 +52,21 @@ uvicorn app.main:app --reload --port 8000
 
 Run Neo4j separately if needed (`docker compose up neo4j`).
 
+## Материалы для отчёта
+
+В каталоге `docs/` (после `python scripts/generate_coursework.py`):
+
+- `opisanie_proekta.docx` — текстовое описание (Times New Roman, 14 pt)
+- `prezentaciya.pptx` — презентация (~10 слайдов)
+- `NEPEREVESTI.txt` — что в интерфейсе остаётся на английском
+
+```bash
+pip install -r requirements-docs.txt
+python scripts/generate_coursework.py
+```
+
+Интерфейс клиента в этой копии репозитория — **на русском**.
+
 ## Licence
 
 Add your institution’s licence or copyright line here.

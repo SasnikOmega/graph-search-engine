@@ -9,7 +9,7 @@ from gui import a11y
 
 class SettingsDialog(wx.Dialog):
     def __init__(self, parent: wx.Window, *, base_url: str, timeout: float) -> None:
-        super().__init__(parent, title="Connection settings", style=wx.DEFAULT_DIALOG_STYLE)
+        super().__init__(parent, title="Параметры подключения", style=wx.DEFAULT_DIALOG_STYLE)
         self._url = wx.TextCtrl(self, value=base_url)
         self._timeout = wx.SpinCtrlDouble(
             self,
@@ -23,10 +23,10 @@ class SettingsDialog(wx.Dialog):
         a11y.stack_labeled_control(
             self,
             sz,
-            caption="API base URL (edit field below)",
+            caption="Базовый URL API (поле ввода ниже)",
             body=(
-                "Enter the full root URL of the graph engine REST API, "
-                "including protocol and port, for example http://127.0.0.1:8000"
+                "Полный адрес REST API, включая протокол и порт, "
+                "например http://127.0.0.1:8000"
             ),
             control=self._url,
             control_proportion=0,
@@ -34,10 +34,9 @@ class SettingsDialog(wx.Dialog):
         a11y.stack_labeled_control(
             self,
             sz,
-            caption="Request timeout in seconds (spin box below)",
+            caption="Таймаут запроса в секундах (поле ниже)",
             body=(
-                "Maximum time to wait for each HTTP request before the client reports a timeout. "
-                "Increase this value on slow networks."
+                "Сколько секунд ждать ответ сервера. На медленной сети значение можно увеличить."
             ),
             control=self._timeout,
             control_proportion=0,

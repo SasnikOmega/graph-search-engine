@@ -71,14 +71,14 @@ class ApiClient:
             r = self._client.request(method, self._url(path), headers=headers, **kwargs)
         except httpx.ConnectError as e:
             raise ApiError(
-                "Cannot connect to the server. Check that the API is running "
-                "and the base URL in Connection settings is correct.\n\n"
-                f"Details: {e}",
+                "Не удалось подключиться к серверу. Убедитесь, что API запущен "
+                "и в параметрах подключения указан верный адрес.\n\n"
+                f"Подробности: {e}",
             ) from e
         except httpx.TimeoutException as e:
-            raise ApiError(f"The request timed out: {e}") from e
+            raise ApiError(f"Превышено время ожидания ответа: {e}") from e
         except httpx.RequestError as e:
-            raise ApiError(f"Network error: {e}") from e
+            raise ApiError(f"Сетевая ошибка: {e}") from e
 
         if r.is_error:
             raise ApiError(
@@ -192,4 +192,4 @@ class ApiClient:
             return self._request("GET", "/graph/export/graphml").content
         if fmt == "gexf":
             return self._request("GET", "/graph/export/gexf").content
-        raise ApiError(f"Unsupported export format: {fmt!r}. Use json, graphml, or gexf.")
+        raise ApiError(f"Неподдерживаемый формат экспорта: {fmt!r}. Допустимы json, graphml, gexf.")

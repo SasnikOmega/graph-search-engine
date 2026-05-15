@@ -24,7 +24,7 @@ class MainFrame(wx.Frame):
     def __init__(self) -> None:
         super().__init__(
             None,
-            title="Graph engine — desktop client",
+            title="Графовая СУБД — клиент",
             size=(980, 640),
             style=wx.DEFAULT_FRAME_STYLE,
         )
@@ -39,40 +39,40 @@ class MainFrame(wx.Frame):
 
         self.CreateStatusBar(2)
         self.SetStatusWidths([-2, -1])
-        self.SetStatusText("Ready.", 0)
+        self.SetStatusText("Готово.", 0)
         self.SetStatusText("", 1)
 
         self._build_menu()
         self._build_body()
 
         self.Bind(wx.EVT_CLOSE, self._on_close)
-        self._async(self._bootstrap, self._after_bootstrap, "Could not reach server")
+        self._async(self._bootstrap, self._after_bootstrap, "Сервер недоступен")
 
     def _build_menu(self) -> None:
         bar = wx.MenuBar()
         file_m = wx.Menu()
-        mi_settings = file_m.Append(wx.ID_ANY, "Connection &settings…\tCtrl+,")
+        mi_settings = file_m.Append(wx.ID_ANY, "Параметры &подключения…\tCtrl+,")
         file_m.AppendSeparator()
-        mi_exit = file_m.Append(wx.ID_EXIT, "E&xit\tAlt+F4")
-        bar.Append(file_m, "&File")
+        mi_exit = file_m.Append(wx.ID_EXIT, "В&ыход\tAlt+F4")
+        bar.Append(file_m, "&Файл")
 
         db_m = wx.Menu()
-        mi_db = db_m.Append(wx.ID_ANY, "&Manage databases…")
-        mi_refresh = db_m.Append(wx.ID_ANY, "&Refresh data\tCtrl+R")
-        bar.Append(db_m, "&Database")
+        mi_db = db_m.Append(wx.ID_ANY, "&Управление базами…")
+        mi_refresh = db_m.Append(wx.ID_ANY, "&Обновить данные\tCtrl+R")
+        bar.Append(db_m, "&База данных")
 
         graph_m = wx.Menu()
-        mi_graph_sum = graph_m.Append(wx.ID_ANY, "Visualize graph (&with summary)…")
-        mi_graph_min = graph_m.Append(wx.ID_ANY, "Visualize graph (&minimal fullscreen)…")
+        mi_graph_sum = graph_m.Append(wx.ID_ANY, "Показать граф (&со сводкой)…")
+        mi_graph_min = graph_m.Append(wx.ID_ANY, "Показать граф (&на весь экран)…")
         graph_m.AppendSeparator()
-        mi_imp = graph_m.Append(wx.ID_ANY, "&Import graph from file…")
-        mi_exp = graph_m.Append(wx.ID_ANY, "&Export graph to file…")
-        bar.Append(graph_m, "&Graph")
+        mi_imp = graph_m.Append(wx.ID_ANY, "&Импорт из файла…")
+        mi_exp = graph_m.Append(wx.ID_ANY, "&Экспорт в файл…")
+        bar.Append(graph_m, "&Граф")
 
         help_m = wx.Menu()
-        mi_docs = help_m.Append(wx.ID_ANY, "&API docs in browser")
-        mi_about = help_m.Append(wx.ID_ABOUT, "&About")
-        bar.Append(help_m, "&Help")
+        mi_docs = help_m.Append(wx.ID_ANY, "Документация &API в браузере")
+        mi_about = help_m.Append(wx.ID_ABOUT, "&О программе")
+        bar.Append(help_m, "&Справка")
         self.SetMenuBar(bar)
 
         self.Bind(wx.EVT_MENU, self._on_settings, mi_settings)
@@ -108,33 +108,33 @@ class MainFrame(wx.Frame):
         a11y.stack_labeled_control(
             panel,
             url_col,
-            caption="Current API base URL (read-only field below)",
+            caption="Текущий базовый URL API (поле только для чтения ниже)",
             body=(
-                "This mirrors the address used for REST calls. "
-                "To change it, use the Settings button or File → Connection settings."
+                "Адрес, по которому клиент обращается к серверу. "
+                "Изменить можно кнопкой «Настройки» или в меню Файл → Параметры подключения."
             ),
             control=self._url_display,
             control_proportion=0,
         )
         url_outer.Add(url_col, 1, wx.EXPAND)
-        btn_settings = wx.Button(panel, label="Settings…")
-        a11y.announce(btn_settings, "Open connection settings", "Change base URL and timeout.")
+        btn_settings = wx.Button(panel, label="Настройки…")
+        a11y.announce(btn_settings, "Открыть параметры подключения", "Изменить адрес API и таймаут.")
         url_outer.Add(btn_settings, 0, wx.ALIGN_BOTTOM | wx.LEFT, 8)
         root.Add(url_outer, 0, wx.EXPAND | wx.LEFT | wx.RIGHT | wx.TOP, 8)
         self.Bind(wx.EVT_BUTTON, self._on_settings, btn_settings)
 
         db_heading = wx.StaticText(
             panel,
-            label="Active Neo4j database (drop-down list below)",
+            label="Активная база Neo4j (выпадающий список ниже)",
         )
-        db_heading.SetName("Active Neo4j database (heading)")
+        db_heading.SetName("Активная база Neo4j (заголовок)")
         db_heading.SetHelpText(
-            "Choose which database on the server receives all node and relationship requests."
+            "В какую базу на сервере отправляются запросы по вершинам и связям."
         )
         root.Add(db_heading, 0, wx.LEFT | wx.RIGHT | wx.TOP, 8)
         db_hint = wx.StaticText(
             panel,
-            label="Use Manage to list or create databases, then pick one here.",
+            label="Через «Управление» можно просмотреть или создать базы, затем выбрать нужную здесь.",
         )
         db_hint.Wrap(600)
         root.Add(db_hint, 0, wx.LEFT | wx.RIGHT, 8)
@@ -147,15 +147,15 @@ class MainFrame(wx.Frame):
         )
         a11y.announce(
             self._db_choice,
-            "Active Neo4j database. Use Manage to list or create databases, then pick one here.",
-            "Drop-down list of database names returned by the server.",
+            "Активная база Neo4j. Список баз — через «Управление», выбор — здесь.",
+            "Имена баз, полученные с сервера.",
         )
         row2.Add(self._db_choice, 1, wx.EXPAND)
-        btn_db = wx.Button(panel, label="Manage…")
-        a11y.announce(btn_db, "Manage databases", "List, create, or pick the active database.")
+        btn_db = wx.Button(panel, label="Управление…")
+        a11y.announce(btn_db, "Управление базами", "Список, создание и выбор активной базы.")
         row2.Add(btn_db, 0, wx.LEFT, 6)
-        btn_refresh = wx.Button(panel, label="Refresh")
-        a11y.announce(btn_refresh, "Refresh lists", "Reload nodes and relationships from the server.")
+        btn_refresh = wx.Button(panel, label="Обновить")
+        a11y.announce(btn_refresh, "Обновить списки", "Загрузить вершины и связи с сервера.")
         row2.Add(btn_refresh, 0, wx.LEFT, 6)
         root.Add(row2, 0, wx.EXPAND | wx.LEFT | wx.RIGHT, 8)
         self.Bind(wx.EVT_BUTTON, self._on_manage_db, btn_db)
@@ -163,26 +163,26 @@ class MainFrame(wx.Frame):
         self.Bind(wx.EVT_COMBOBOX, self._on_db_changed, self._db_choice)
 
         nb = wx.Notebook(panel)
-        a11y.announce(nb, "Data tabs", "Switch between nodes, relationships, and server status.")
+        a11y.announce(nb, "Вкладки данных", "Переключение: вершины, связи, состояние сервера.")
         self._nodes_lc = wx.ListCtrl(nb, style=wx.LC_REPORT | wx.LC_SINGLE_SEL)
         for i, (title, w) in enumerate(
-            [("Element ID", 240), ("Labels", 160), ("Properties", 520)]
+            [("Идентификатор", 240), ("Метки", 160), ("Свойства", 520)]
         ):
             self._nodes_lc.InsertColumn(i, title, width=w)
-        a11y.announce(self._nodes_lc, "Nodes table", "Select a node to edit or delete.")
+        a11y.announce(self._nodes_lc, "Таблица вершин", "Выберите вершину для изменения или удаления.")
 
         self._rels_lc = wx.ListCtrl(nb, style=wx.LC_REPORT | wx.LC_SINGLE_SEL)
         for i, (title, w) in enumerate(
             [
-                ("Relationship ID", 220),
-                ("Type", 100),
-                ("Start node", 200),
-                ("End node", 200),
-                ("Properties", 360),
+                ("Идентификатор связи", 220),
+                ("Тип", 100),
+                ("Начало", 200),
+                ("Конец", 200),
+                ("Свойства", 360),
             ]
         ):
             self._rels_lc.InsertColumn(i, title, width=w)
-        a11y.announce(self._rels_lc, "Relationships table", "Select a relationship to delete.")
+        a11y.announce(self._rels_lc, "Таблица связей", "Выберите связь для удаления.")
 
         status_panel = wx.Panel(nb)
         sp = wx.BoxSizer(wx.VERTICAL)
@@ -193,40 +193,42 @@ class MainFrame(wx.Frame):
         a11y.stack_labeled_control(
             status_panel,
             sp,
-            caption="Health check response (read-only text area below)",
-            body="JSON returned by GET /health after the last check. Use the button to run a new check.",
+            caption="Ответ проверки доступности (текстовое поле ниже, только чтение)",
+            body="JSON от GET /health после последней проверки. Кнопка ниже — выполнить проверку снова.",
             control=self._health_text,
             control_proportion=1,
         )
-        btn_h = wx.Button(status_panel, label="Run health check now")
-        a11y.announce(btn_h, "Run health check", "Calls GET /health on the API.")
+        btn_h = wx.Button(status_panel, label="Проверить доступность")
+        a11y.announce(btn_h, "Проверить доступность", "Вызов GET /health на сервере API.")
         sp.Add(btn_h, 0, wx.ALL, 6)
         status_panel.SetSizer(sp)
         self.Bind(wx.EVT_BUTTON, self._on_health, btn_h)
 
-        nb.AddPage(self._nodes_lc, "Nodes", select=True)
-        nb.AddPage(self._rels_lc, "Relationships")
-        nb.AddPage(status_panel, "Server status")
+        nb.AddPage(self._nodes_lc, "Вершины", select=True)
+        nb.AddPage(self._rels_lc, "Связи")
+        nb.AddPage(status_panel, "Состояние сервера")
         root.Add(nb, 1, wx.EXPAND | wx.ALL, 8)
 
         btn_row = wx.BoxSizer(wx.HORIZONTAL)
         for label, handler in (
-            ("Add node…", self._on_add_node),
-            ("Edit selected node…", self._on_edit_node),
-            ("Delete selected node…", self._on_delete_node),
-            ("Add relationship…", self._on_add_rel),
-            ("Delete selected relationship…", self._on_delete_rel),
+            ("Добавить вершину…", self._on_add_node),
+            ("Изменить вершину…", self._on_edit_node),
+            ("Удалить вершину…", self._on_delete_node),
+            ("Добавить связь…", self._on_add_rel),
+            ("Удалить связь…", self._on_delete_rel),
         ):
             b = wx.Button(panel, label=label)
             btn_row.Add(b, 0, wx.ALL, 4)
             self.Bind(wx.EVT_BUTTON, handler, b)
         root.Add(btn_row, 0, wx.ALIGN_LEFT | wx.LEFT, 4)
 
-        self._detach_delete = wx.CheckBox(panel, label="When deleting a node, detach (remove) connected relationships first")
+        self._detach_delete = wx.CheckBox(
+            panel, label="При удалении вершины сначала удалить все связанные с ней связи"
+        )
         a11y.announce(
             self._detach_delete,
-            "Detach relationships when deleting node",
-            "Maps to the API detach query parameter on node delete.",
+            "Удалять связи вместе с вершиной",
+            "Соответствует параметру detach при удалении вершины на сервере.",
         )
         self._detach_delete.SetValue(True)
         root.Add(self._detach_delete, 0, wx.ALL, 8)
@@ -259,8 +261,8 @@ class MainFrame(wx.Frame):
         dlg.Destroy()
         if not url.startswith("http://") and not url.startswith("https://"):
             wx.MessageBox(
-                "Base URL should start with http:// or https://",
-                "Validation",
+                "Адрес должен начинаться с http:// или https://",
+                "Проверка данных",
                 wx.OK | wx.ICON_INFORMATION,
                 self,
             )
@@ -272,7 +274,7 @@ class MainFrame(wx.Frame):
         self._client.close()
         self._client = ApiClient(url, database=db, timeout=timeout)
         save_config({"base_url": url, "database": db, "timeout": timeout})
-        self._async(self._bootstrap, self._after_bootstrap, "Could not reach server")
+        self._async(self._bootstrap, self._after_bootstrap, "Сервер недоступен")
 
     def _on_manage_db(self, _: wx.CommandEvent | None) -> None:
         dlg = DatabaseManagerDialog(self, self._client)
@@ -288,13 +290,13 @@ class MainFrame(wx.Frame):
                     "timeout": self._timeout,
                 }
             )
-        self._async(self._load_db_names, self._apply_db_names, "Could not list databases")
+        self._async(self._load_db_names, self._apply_db_names, "Не удалось получить список баз")
 
     def _on_refresh_all(self, _: wx.CommandEvent | None) -> None:
-        self._async(self._load_lists, self._apply_lists, "Could not load graph data")
+        self._async(self._load_lists, self._apply_lists, "Не удалось загрузить данные графа")
 
     def _on_health(self, _: wx.CommandEvent | None) -> None:
-        self._async(lambda: self._client.health(), self._apply_health, "Health check failed")
+        self._async(lambda: self._client.health(), self._apply_health, "Проверка доступности не удалась")
 
     def _start_visualize(self, minimal: bool) -> None:
         def loaded(data: dict[str, Any]) -> None:
@@ -303,7 +305,7 @@ class MainFrame(wx.Frame):
         self._async(
             lambda: self._client.graph_export(),
             loaded,
-            "Could not export graph",
+            "Не удалось выгрузить граф",
         )
 
     def _open_graph_window(
@@ -312,7 +314,7 @@ class MainFrame(wx.Frame):
         *,
         minimal: bool = False,
     ) -> None:
-        title = "Graph" if minimal else "Graph visualization"
+        title = "Граф" if minimal else "Визуализация графа"
         win = GraphPreviewFrame(self, title, data, minimal=minimal)
         win.Show()
 
@@ -321,8 +323,8 @@ class MainFrame(wx.Frame):
         m = stats.get("edges_created", "?")
         dlg = wx.MessageDialog(
             self,
-            f"Nodes processed: {n}\nEdges processed: {m}",
-            "Import succeeded",
+            f"Обработано вершин: {n}\nОбработано рёбер: {m}",
+            "Импорт выполнен",
             wx.OK | wx.ICON_INFORMATION,
         )
         dlg.ShowModal()
@@ -332,7 +334,7 @@ class MainFrame(wx.Frame):
         dlg = wx.MessageDialog(
             self,
             str(err) or err.__class__.__name__,
-            "Import failed",
+            "Ошибка импорта",
             wx.OK | wx.ICON_ERROR,
         )
         body = getattr(err, "body", None)
@@ -344,8 +346,8 @@ class MainFrame(wx.Frame):
     def _on_import_graph_file(self, _: wx.CommandEvent) -> None:
         fd = wx.FileDialog(
             self,
-            "Import graph file",
-            wildcard="JSON graph (*.json)|*.json|GraphML (*.graphml;*.xml)|*.graphml;*.xml|All files (*.*)|*.*",
+            "Импорт файла с графом",
+            wildcard="JSON (*.json)|*.json|GraphML (*.graphml;*.xml)|*.graphml;*.xml|Все файлы (*.*)|*.*",
             style=wx.FD_OPEN | wx.FD_FILE_MUST_EXIST,
         )
         if fd.ShowModal() != wx.ID_OK:
@@ -356,11 +358,11 @@ class MainFrame(wx.Frame):
 
         mode_dlg = wx.SingleChoiceDialog(
             self,
-            "Choose how the imported data is merged into the active database.",
-            "Import mode",
+            "Как объединить импортируемые данные с активной базой.",
+            "Режим импорта",
             [
-                "Append: keep existing nodes and relationships, add new ones",
-                "Replace: delete all nodes and relationships in this database, then import",
+                "Добавить: сохранить существующие вершины и связи, добавить новые",
+                "Заменить: удалить все вершины и связи в базе, затем импортировать",
             ],
             0,
         )
@@ -376,12 +378,12 @@ class MainFrame(wx.Frame):
                 if ext == ".json":
                     doc = json.loads(path.read_text(encoding="utf-8"))
                     if not isinstance(doc, dict) or "nodes" not in doc or "edges" not in doc:
-                        return None, ValueError("JSON must be an object with 'nodes' and 'edges' arrays.")
+                        return None, ValueError("В JSON нужен объект с массивами 'nodes' и 'edges'.")
                     return self._client.graph_import_json(doc, mode=mode), None
                 if ext in (".graphml", ".xml"):
                     xml = path.read_text(encoding="utf-8")
                     return self._client.graph_import_graphml(xml, mode=mode), None
-                return None, ValueError("Unsupported file type. Use .json or .graphml (or .xml GraphML).")
+                return None, ValueError("Неподдерживаемый тип файла. Используйте .json или .graphml (или .xml).")
             except Exception as e:
                 return None, e
 
@@ -394,12 +396,12 @@ class MainFrame(wx.Frame):
                 self._show_import_ok(stats)
             self._on_refresh_all(None)
 
-        self._async(worker, done, "Import failed")
+        self._async(worker, done, "Ошибка импорта")
 
     def _on_export_graph_file(self, _: wx.CommandEvent) -> None:
         fd = wx.FileDialog(
             self,
-            "Export graph to file",
+            "Экспорт графа в файл",
             wildcard="JSON (*.json)|*.json|GraphML (*.graphml)|*.graphml|GEXF (*.gexf)|*.gexf",
             style=wx.FD_SAVE | wx.FD_OVERWRITE_PROMPT,
         )
@@ -418,8 +420,8 @@ class MainFrame(wx.Frame):
             fmt = "gexf"
         else:
             wx.MessageBox(
-                "The file name must end with .json, .graphml, or .gexf.",
-                "Export",
+                "Имя файла должно заканчиваться на .json, .graphml или .gexf.",
+                "Экспорт",
                 wx.OK | wx.ICON_INFORMATION,
                 self,
             )
@@ -442,13 +444,13 @@ class MainFrame(wx.Frame):
                 self._show_import_failed(e)
                 return
             wx.MessageBox(
-                f"Graph saved to:\n{out_path}",
-                "Export succeeded",
+                f"Граф сохранён в:\n{out_path}",
+                "Экспорт выполнен",
                 wx.OK | wx.ICON_INFORMATION,
                 self,
             )
 
-        self._async(worker, done, "Export failed")
+        self._async(worker, done, "Ошибка экспорта")
 
     def _on_open_docs(self, _: wx.CommandEvent) -> None:
         url = self._base_url.rstrip("/") + "/docs"
@@ -456,11 +458,11 @@ class MainFrame(wx.Frame):
 
     def _on_about(self, _: wx.CommandEvent) -> None:
         wx.MessageBox(
-            "Graph engine desktop client.\n\n"
-            "Talks to the FastAPI backend over HTTP. "
-            "Connection settings are stored in the file .graph_engine_gui.json in your user profile folder.\n\n"
-            "Shortcuts: Ctrl+comma opens connection settings; Ctrl+R refreshes node and relationship lists.",
-            "About",
+            "Клиент графовой СУБД.\n\n"
+            "Обмен данными с сервером по HTTP (REST API). "
+            "Параметры подключения хранятся в файле .graph_engine_gui.json в профиле пользователя.\n\n"
+            "Горячие клавиши: Ctrl+, — параметры подключения; Ctrl+R — обновить списки.",
+            "О программе",
             wx.OK | wx.ICON_INFORMATION,
             self,
         )
@@ -475,22 +477,22 @@ class MainFrame(wx.Frame):
             props = dlg.get_properties()
         except json.JSONDecodeError as e:
             dlg.Destroy()
-            show_error(self, "Invalid JSON", e)
+            show_error(self, "Некорректный JSON", e)
             return
         dlg.Destroy()
         if not labels:
-            wx.MessageBox("Enter at least one label.", "Validation", wx.OK | wx.ICON_INFORMATION, self)
+            wx.MessageBox("Укажите хотя бы одну метку.", "Проверка данных", wx.OK | wx.ICON_INFORMATION, self)
             return
         self._async(
             lambda: self._client.node_create(labels, props),
             lambda _: self._on_refresh_all(None),
-            "Could not create node",
+            "Не удалось создать вершину",
         )
 
     def _on_edit_node(self, _: wx.CommandEvent) -> None:
         idx = self._nodes_lc.GetFirstSelected()
         if idx < 0:
-            wx.MessageBox("Select a node first.", "Nodes", wx.OK | wx.ICON_INFORMATION, self)
+            wx.MessageBox("Сначала выберите вершину в списке.", "Вершины", wx.OK | wx.ICON_INFORMATION, self)
             return
         eid = self._nodes_lc.GetItemText(idx, 0)
 
@@ -510,31 +512,31 @@ class MainFrame(wx.Frame):
                 replace = dlg.get_replace()
             except json.JSONDecodeError as e:
                 dlg.Destroy()
-                show_error(self, "Invalid JSON", e)
+                show_error(self, "Некорректный JSON", e)
                 return
             dlg.Destroy()
             self._async(
                 lambda: self._client.node_update(eid, new_props, replace=replace),
                 lambda _: self._on_refresh_all(None),
-                "Could not update node",
+                "Не удалось изменить вершину",
             )
 
         self._async(
             lambda: self._client.node_get(eid),
             open_editor,
-            "Could not load node",
+            "Не удалось загрузить вершину",
         )
 
     def _on_delete_node(self, _: wx.CommandEvent) -> None:
         idx = self._nodes_lc.GetFirstSelected()
         if idx < 0:
-            wx.MessageBox("Select a node first.", "Nodes", wx.OK | wx.ICON_INFORMATION, self)
+            wx.MessageBox("Сначала выберите вершину в списке.", "Вершины", wx.OK | wx.ICON_INFORMATION, self)
             return
         eid = self._nodes_lc.GetItemText(idx, 0)
         if (
             wx.MessageBox(
-                f"Delete node {eid!r}?",
-                "Confirm delete",
+                f"Удалить вершину {eid!r}?",
+                "Подтверждение удаления",
                 wx.YES_NO | wx.NO_DEFAULT | wx.ICON_WARNING,
                 self,
             )
@@ -546,7 +548,7 @@ class MainFrame(wx.Frame):
         def do():
             self._client.node_delete(eid, detach=detach)
 
-        self._async(do, lambda _: self._on_refresh_all(None), "Could not delete node")
+        self._async(do, lambda _: self._on_refresh_all(None), "Не удалось удалить вершину")
 
     def _on_add_rel(self, _: wx.CommandEvent) -> None:
         dlg = RelCreateDialog(self)
@@ -557,29 +559,29 @@ class MainFrame(wx.Frame):
             props = dlg.get_properties()
         except json.JSONDecodeError as e:
             dlg.Destroy()
-            show_error(self, "Invalid JSON", e)
+            show_error(self, "Некорректный JSON", e)
             return
         start, end, typ = dlg.get_start(), dlg.get_end(), dlg.get_type()
         dlg.Destroy()
         if not start or not end or not typ:
-            wx.MessageBox("Fill in start, end, and type.", "Validation", wx.OK | wx.ICON_INFORMATION, self)
+            wx.MessageBox("Заполните начало, конец и тип связи.", "Проверка данных", wx.OK | wx.ICON_INFORMATION, self)
             return
         self._async(
             lambda: self._client.rel_create(start, end, typ, props),
             lambda _: self._on_refresh_all(None),
-            "Could not create relationship",
+            "Не удалось создать связь",
         )
 
     def _on_delete_rel(self, _: wx.CommandEvent) -> None:
         idx = self._rels_lc.GetFirstSelected()
         if idx < 0:
-            wx.MessageBox("Select a relationship first.", "Relationships", wx.OK | wx.ICON_INFORMATION, self)
+            wx.MessageBox("Сначала выберите связь в списке.", "Связи", wx.OK | wx.ICON_INFORMATION, self)
             return
         rid = self._rels_lc.GetItemText(idx, 0)
         if (
             wx.MessageBox(
-                f"Delete relationship {rid!r}?",
-                "Confirm delete",
+                f"Удалить связь {rid!r}?",
+                "Подтверждение удаления",
                 wx.YES_NO | wx.NO_DEFAULT | wx.ICON_WARNING,
                 self,
             )
@@ -590,7 +592,7 @@ class MainFrame(wx.Frame):
         def do():
             self._client.rel_delete(rid)
 
-        self._async(do, lambda _: self._on_refresh_all(None), "Could not delete relationship")
+        self._async(do, lambda _: self._on_refresh_all(None), "Не удалось удалить связь")
 
     # --- async helpers ---
 
@@ -640,7 +642,7 @@ class MainFrame(wx.Frame):
         elif names:
             self._db_choice.SetSelection(0)
             self._client.set_database(self._db_choice.GetStringSelection())
-        self.SetStatusText(f"{len(names)} database(s) on server.", 1)
+        self.SetStatusText(f"Баз на сервере: {len(names)}.", 1)
 
     def _load_lists(self) -> tuple[list[dict[str, Any]], list[dict[str, Any]]]:
         nodes = self._client.nodes_list(skip=0, limit=500)
@@ -673,7 +675,7 @@ class MainFrame(wx.Frame):
             self._rels_lc.SetItem(idx, 4, pr)
 
         self.SetStatusText(
-            f"Loaded {len(nodes)} node(s), {len(rels)} relationship(s).",
+            f"Загружено: вершин — {len(nodes)}, связей — {len(rels)}.",
             0,
         )
 

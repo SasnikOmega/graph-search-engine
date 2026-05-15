@@ -27,7 +27,7 @@ class GraphPreviewFrame(wx.Frame):
     ) -> None:
         self._minimal = minimal
         if minimal:
-            super().__init__(parent, title="Graph", size=(960, 720), style=wx.DEFAULT_FRAME_STYLE)
+            super().__init__(parent, title="Граф", size=(960, 720), style=wx.DEFAULT_FRAME_STYLE)
         else:
             super().__init__(parent, title=title, size=(960, 720), style=wx.DEFAULT_FRAME_STYLE)
 
@@ -39,8 +39,8 @@ class GraphPreviewFrame(wx.Frame):
             self._info = wx.StaticText(panel, label="")
             a11y.announce(
                 self._info,
-                "Graph summary",
-                "Summary of how many nodes and edges are shown.",
+                "Сводка по графу",
+                "Сколько вершин и рёбер отображено.",
             )
             root.Add(self._info, 0, wx.EXPAND | wx.ALL, 6)
 
@@ -48,8 +48,8 @@ class GraphPreviewFrame(wx.Frame):
         self.canvas = FigureCanvas(panel, wx.ID_ANY, self.figure)
         a11y.announce(
             self.canvas,
-            "Graph drawing area",
-            "Visual layout of nodes and directed edges. Press Escape to close this window.",
+            "Область рисования графа",
+            "Схема вершин и направленных рёбер. Escape — закрыть окно.",
         )
         root.Add(self.canvas, 1, wx.EXPAND | wx.ALL, 4)
 
@@ -98,9 +98,12 @@ class GraphPreviewFrame(wx.Frame):
                 for e in edges
                 if str(e.get("source")) in shown_ids and str(e.get("target")) in shown_ids
             ]
-            msg = f"Showing first {self.MAX_NODES} of {n} nodes (and matching edges) for performance."
+            msg = (
+                f"Показаны первые {self.MAX_NODES} из {n} вершин "
+                f"(и соответствующие рёбра) — для ускорения отображения."
+            )
         else:
-            msg = f"{n} nodes, {len(edges)} edges."
+            msg = f"Вершин: {n}, рёбер: {len(edges)}."
 
         if self._info is not None:
             self._info.SetLabel(msg)
@@ -125,7 +128,14 @@ class GraphPreviewFrame(wx.Frame):
         ax = self.figure.subplots()
         ax.set_axis_off()
         if G.number_of_nodes() == 0:
-            ax.text(0.5, 0.5, "No nodes to display", ha="center", va="center", transform=ax.transAxes)
+            ax.text(
+                0.5,
+                0.5,
+                "Нет вершин для отображения",
+                ha="center",
+                va="center",
+                transform=ax.transAxes,
+            )
             self.canvas.draw()
             return
 
