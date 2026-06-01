@@ -223,7 +223,7 @@ class MainFrame(wx.Frame):
         root.Add(btn_row, 0, wx.ALIGN_LEFT | wx.LEFT, 4)
 
         self._detach_delete = wx.CheckBox(
-            panel, label="При удалении вершины сначала удалить все связанные с ней связи"
+            panel, label="При удалении вершины сначала удалить все относящиеся к ней связи"
         )
         a11y.announce(
             self._detach_delete,
